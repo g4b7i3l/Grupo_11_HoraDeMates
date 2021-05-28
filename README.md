@@ -5,5 +5,6 @@
 
 ### Cespedes Federico Gonzalo -
 
--26 años
--Estudiante de programacion web y tecnicatura en informática.
+*  26 años
+* Estudiante de programación web y tecnicatura en informática.
+* 
