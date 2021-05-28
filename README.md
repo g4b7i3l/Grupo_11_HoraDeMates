@@ -24,8 +24,9 @@
 
 ### Gabriel Bagnarelli:
 
-*..............
-*..............
-*...............
+*  24 años
+* Estudiante de programación web.
+* Interesado en la tecnología y apasionado de los videojuegos.
+
 
 
