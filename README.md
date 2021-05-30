@@ -22,15 +22,26 @@ Nuestro sitio está orientado a la comercialización de mates, brindando product
 
 ### Leandro Segovia:
 
-*..............
-*...............
-*..............
+* 24 años.
+* Ingenieria en informática
+* Interesado en la lectura,Gamer,cinéfilo.
 
 ### Gabriel Bagnarelli:
 
 *  24 años
 * Estudiante de programación web.
 * Interesado en la tecnología y apasionado de los videojuegos.
+
+## Referencias: 
+
+Elegimos estos sitios de referencia debido a su relación con nuestro proyecto en cuanto a sus diversas funcionalidades y por la estética que presentan los mismos.
+
+* https://un-mate.com.ar/
+* https://www.elclubdelmate.com/
+* https://todomates.com.ar/
+* https://www.jumbo.com.ar/
+* https://yerbamatearai.com/
+
 
 
 
