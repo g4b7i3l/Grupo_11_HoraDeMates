@@ -5,15 +5,18 @@ Nuestro sitio está orientado a la comercialización de mates, brindando product
 
 ##  Integrantes:
 
-### Ramses Adorno:
+### Ramsés Roy Adorno Villalba:
 
-*.............
-*............
-*............
+* 27 años.
+* Estudiante de programación web.
+* Productor Musical.
+* Apasionado por el diseño gráfico, la música y la técnología.
+
+
 
 ### Cespedes Federico Gonzalo:
 
-*  26 años
+*  26 años.
 * Estudiante de programación web y tecnicatura en informática.
 * Amante de la tecnología.
 
