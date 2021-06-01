@@ -34,13 +34,13 @@ Nuestro sitio está orientado a la comercialización de mates, brindando product
 
 ## Referencias: 
 
-Elegimos estos sitios de referencia debido a su relación con nuestro proyecto en cuanto a sus diversas funcionalidades y por la estética que presentan los mismos.
 
-* https://un-mate.com.ar/
-* https://www.elclubdelmate.com/
-* https://todomates.com.ar/
-* https://www.jumbo.com.ar/
-* https://yerbamatearai.com/
+
+* https://un-mate.com.ar/ :  La elegimos como referencia  por la temática  en general que presenta la misma.
+* https://www.elclubdelmate.com :  Pagina elegida por los clientes a los que apunta y por sus diversas funcionalidades.
+* https://todomates.com.ar/:  Sitio elegido  por su relacion con nuestro proyecto y además por la gran estética que propone.
+* https://www.jumbo.com.ar/ : Nos pareció bastante completa  en todos los aspectos, entre ellos, el carrusel.
+* https://yerbamatearai.com/ : Ademas de estar relacionada con nuestro proyecto, destacamos la sencillez  y la función de filtrar.
 
 
 
