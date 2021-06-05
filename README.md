@@ -20,11 +20,12 @@ Nuestro sitio está orientado a la comercialización de mates, brindando product
 * Estudiante de programación web y tecnicatura en informática.
 * Amante de la tecnología.
 
-### Leandro Segovia:
+### Leandro Nicolas Segovia:
 
-* 24 años.
-* Ingenieria en informática
-* Interesado en la lectura,Gamer,cinéfilo.
+*  24 años.
+* Ingenieria en informática. 
+* Interesado en la lectura,musica,Gamer,cinéfilo.
+* Estudiante de programación web.
 
 ### Gabriel Bagnarelli:
 
