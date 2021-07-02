@@ -1,0 +1,112 @@
+.carrito{
+    background-color: white;
+}
+.imagen1{
+    margin-top: 30px;
+}
+.carrito h1{
+    padding: 10px;
+}
+.negrita{
+    font-weight: bolder;
+}
+.carrito .tucarta{
+    text-align: center;
+}
+.carrito .quitar{
+text-decoration: underline;
+align-self:flex-end;
+}
+.carrito .Tu-Carta{
+    justify-content: space-around;
+    display: flex;
+    border-bottom: 1px solid black;
+}
+
+.carrito .pilar{
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.carrito .caja1{
+    border: 2px solid black;
+    display: inline-block;
+    margin: 4px 0 10px;
+    padding: 3px;
+    font-size: 13px;
+}
+
+.carrito .envio-retiro{
+    background-color:rgb(152, 150, 172);
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+  
+}
+
+
+.carrito .total{
+    text-align: center;
+    padding-top: 30px;
+}
+.carrito .finalizar-compra{
+    border: 2px solid black;
+    background-color: black;
+    color:white;
+    display:block ; 
+    text-align: center;
+    margin: 20px 80px 20px;
+    padding: 15px 0 5px;
+}
+/* -------------------------------------------- Tablet -----------------------------------------*/
+@media(min-width:361px){
+    .carrito .caja1{
+        border: none;
+        margin: 4px 0 10px;
+        padding: 3px;
+        font-size: 13px;
+    }
+    .carrito .cajita{
+        width: 10px;
+        border:solid 1px black;
+        padding: 5px;
+        margin: 10px;
+        box-sizing: border-box;
+    }
+    .carrito .envio-retiro{
+        background-color: white;
+        flex-direction: column;
+    }
+    .carrito .pilar{
+        margin-top: 10px;
+        margin-left: 10px;
+        width: 50%;
+    }
+    .carrito .descripcion{
+        margin:0 0 5px 0;
+        
+    }
+    .carrito .Tu-Carta{  
+        width: 50%;
+    }
+
+    .carrito .envio-retiro{
+            margin: 4px 10px 10px;
+            padding: 3px;
+            font-size: 13px;   
+            width: 50%;     
+    }
+    .carrito .menu{    
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .carrito .caja-tablet{
+        border: 2px solid black;
+        display: inline-block;
+        margin: 4px 0 10px;
+        padding: 3px;
+        font-size: 13px;
+        text-align: center;
+        }
+
+}
