@@ -1,0 +1,33 @@
+
+.registro h2{
+    color: white;
+    margin-bottom: 10px;
+    padding: 20px 0 30px;
+}
+.registro .contenedor{
+background-color: #848484;
+margin-top: 20px;
+padding-bottom: 70px;
+text-align:center;
+}
+.registro .caja{
+    border: white 1px solid;
+background-color: white;
+margin: 10px 20px;
+padding: 18.2px;
+border-radius: 7px;
+height: 50px;
+}
+.registro p{
+  color: #949494;
+}
+.registro i{
+    color: black ;
+    margin-right: 10px;
+}
+/* -------------------- tablet ----------------------- */
+@media(min-width:361px){
+    .registro .contenedor{
+margin: 10% 20% 20%;
+    }
+}
