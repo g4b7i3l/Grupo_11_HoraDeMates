@@ -1,0 +1,9 @@
+.navbar{
+    background-color: transparent !important;
+    
+}
+
+.navbar-toggler{
+    margin-top: -15px;
+    font-size: 14px;
+}
