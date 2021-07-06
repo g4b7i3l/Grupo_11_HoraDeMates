@@ -1,6 +1,3 @@
-.carrito{
-    background-color: white;
-}
 .imagen1{
     margin-top: 30px;
 }
@@ -37,13 +34,13 @@ align-self:flex-end;
 }
 
 .carrito .envio-retiro{
-    background-color:rgb(152, 150, 172);
     display: flex;
     justify-content: space-around;
     margin-top: 30px;
-  
 }
-
+.carrito .envio-retiro a{
+color: black;
+}
 
 .carrito .total{
     text-align: center;
