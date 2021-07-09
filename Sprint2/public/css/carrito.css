@@ -73,37 +73,41 @@ color: black;
     .carrito .envio-retiro{
         background-color: white;
         flex-direction: column;
+        margin: 4px 100px 10px;
+        padding:10px 30px 0 0;
+        font-size: 13px;   
+        width: 230px; 
+        
     }
     .carrito .pilar{
         margin-top: 10px;
         margin-left: 10px;
-        width: 50%;
+        width: 10%;
     }
     .carrito .descripcion{
         margin:0 0 5px 0;
         
     }
     .carrito .Tu-Carta{  
-        width: 50%;
+        width: 20%;
     }
 
-    .carrito .envio-retiro{
-            margin: 4px 10px 10px;
-            padding: 3px;
-            font-size: 13px;   
-            width: 50%;     
-    }
-    .carrito .menu{    
-        display: flex;
-        flex-direction: row-reverse;
-    }
     .carrito .caja-tablet{
         border: 2px solid black;
         display: inline-block;
-        margin: 4px 0 10px;
-        padding: 3px;
+        margin: 4px 0 5px;
+        padding: 1px;
         font-size: 13px;
         text-align: center;
         }
+
+    .carrito .menu-container{
+        display: flex;
+        justify-content: space-between;
+        margin-left: 10%;
+    }
+    .carrito .espacio{
+        width: 10%;
+    }
 
 }
