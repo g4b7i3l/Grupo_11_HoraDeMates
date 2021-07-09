@@ -90,14 +90,14 @@ header nav .logo img{
 
 
 
-@media (min-width:361px){
+@media (min-width:426px){
 
 header .nav a:hover{
     color: gray
 }
 header .navbar_responsive{
     display: block;
-    justify-content: space-between;
+    
 }
 header .login-bar .logoIn{
     display: block;
@@ -108,11 +108,11 @@ header .burger{
 }
 header .navbar_responsive{
     display: flex;
-    width: 25%;
+    width: 40%;
     order: 5;
     flex-direction: row;
     justify-content: space-between;
-    font-size: 16px;
+    font-size: 25px;
     font-weight: lighter;
     margin-top: 15px;
     font-family:'Jomhuria',cursive;
@@ -168,7 +168,7 @@ header div.search input  {
     border: 5px inset gray;
     border-radius: 10px;
     width: 130px;
-    font-size: 8px;
+    font-size: 10px;
     color: ghostwhite
 }
 

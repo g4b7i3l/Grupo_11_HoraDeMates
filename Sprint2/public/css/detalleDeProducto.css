@@ -74,12 +74,20 @@
 
 
 
-@media (min-width:361px){
+@media (min-width:426){
 
 .menu{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
+ }
+ 
+ .menu.producto {
+     text-align: center;
+     align-items: center;
+     margin-left: 199px;
+     background-color: darkorchid;
+    
  }
   .detalleDeProducto .producto {
         width: 45%;
@@ -87,9 +95,8 @@
   } 
 .detalleDeProducto .menu .producto img{ 
     width: 100%;
-    padding: 15px;
-    margin-left: 30px;
-  
+    
+
 }
 .detalleDeProducto .menu .container{ 
     display: flex;
