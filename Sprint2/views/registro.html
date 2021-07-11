@@ -61,18 +61,63 @@
     </header>
     
     <main>
+        <div class="formulario">
+            <form action="/registro" method="">
+
+                <label for="nombre"><p class="pformulario2">Nombre y apellido:</p></label>
+                <div class="inputs"><input type="text" class="primera-barra" name="nombre" required>
+                </div>
+
+                <label for="usuario"><p class="pformulario2"> Nombre de ID:</p></label>
+                <div class="inputs"><input type="text" class="primera-barra" name="usuario" required>
+                </div>
+
+
+                <label for="clave"><p class="pformulario2">Contraseña:</p> </label>
+                <div class="inputs"><input type="password" class="primera-barra" name="clave" required>
+                </div>
+
+
+                <label for="clave"><p class="pformulario2">Confirmar:</p> </label>
+                <div class="inputs"> <input type="password" class="primera-barra" name="clave" required>
+                </div>
+
+
+                <label for="email"><p class="pformulario2"> Email:</p></label>
+                <div class="inputs"><input type="email" class="primera-barra" name="email" required>
+                </div>
+
+                <label for="fecha"><p class="pformulario2"> Fecha de nacimiento:</p></label>
+                <div class="inputs"><input type="date" class="primera-barra" name="fecha" required>
+                </div>
+
+             <div class="reg-bor">   
+            <div class="registrarse">
+            <input type="button" onclick="document.location='./??PHPSESSID=7k4ibok986phf62g3vscriupr7&action=show_create'" class="button" value="Registrarse">
+            </div>
+            </div>
+
+        <div class="espacio-caja">
+            <div class="espacio"></div>
+            <h3 class="o-tambien">O también:</h3>
+            <div class="espacio"></div>
+        </div>
+
+            </form>
+        </div>
+
         <div class="contenedor">
             <h2>Regístrate</h2>
             <div class="caja">
-                <a href=""><p><i class="fab fa-facebook-f"></i>Regístrate con Facebook</p></a>
+                <a href=""><p class="pformulario"><i class="fab fa-facebook-f"></i>Regístrate con Facebook</p></a>
                 
             </div>
             <div class="caja">
-                <a href=""><p><i class="fab fa-google"></i>Regístrate con Google</p></a>
+                <a href=""><p class="pformulario"><i class="fab fa-google"></i>Regístrate con Google</p></a>
                 
             </div>
             <div class="caja">
-                <a href=""><p><i class="far fa-envelope"></i>Regístrate con Email</p></a>
+                <a href=""><p class="pformulario"><i class="far fa-envelope"></i>Regístrate con Email</p></a>
                 
             </div>
 

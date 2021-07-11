@@ -19,11 +19,51 @@ padding: 18.2px;
 border-radius: 7px;
 height: 50px;
 }
-.registro p{
+.registro .pformulario2 ,.pformulario{
   color: #949494;
+  margin-bottom: 1px;
 }
+
 .registro i{
     margin-right: 10px;
+}
+
+.registro .inputs {
+text-align: center;
+display: flex;
+justify-content: center;
+}
+.registro .formulario{
+    margin: 80px 0 80px;
+    text-align: center;
+}
+.registro .o-tambien{
+    color: gray;
+    margin-top: 40px;
+}
+.registro .formulario button{
+    margin: 10px 0 0 41%;
+}
+.registro .registrarse {
+    margin-top: 10px;
+}
+.registro .button {
+    border: none;
+    width: 108px;
+    height: 30px;
+    text-align: center;
+    font-weight: bold;
+    background-color: darkslategrey;
+    color: #848484;
+}
+.registro .espacio{
+    border-bottom: solid 1px gray;
+    width: 35%;
+    margin: 0 20px;
+}
+.registro .espacio-caja{
+    display: flex;
+    justify-content: space-between;
 }
 /* -------------------- tablet ----------------------- */
 @media(min-width:361px){
