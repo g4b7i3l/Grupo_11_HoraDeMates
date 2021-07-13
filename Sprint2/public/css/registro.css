@@ -1,6 +1,6 @@
 .registro{background: radial-gradient(circle, rgba(47,47,47,1) 0%, rgba(0,0,0,1) 99%);
 }
-.registro h2{
+.registro main h2{
     color: white;
     margin-bottom: 10px;
     padding: 20px 0 30px;
@@ -24,16 +24,16 @@ height: 50px;
   margin-bottom: 1px;
 }
 
-.registro i{
+.registro main i{
     margin-right: 10px;
 }
 
-.registro .inputs {
+.registro main .inputs {
 text-align: center;
 display: flex;
 justify-content: center;
 }
-.registro .formulario{
+.registro main .formulario{
     margin: 80px 0 80px;
     text-align: center;
 }
@@ -47,7 +47,7 @@ justify-content: center;
 .registro .registrarse {
     margin-top: 10px;
 }
-.registro .button {
+.registro main .button {
     border: none;
     width: 108px;
     height: 30px;
