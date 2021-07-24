@@ -23,21 +23,22 @@
 * Usar unicamente un medio de comunicacion ❌.
 
 
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------# RETROSPECTIVA DEL → SPRINT 2
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# RETROSPECTIVA DEL → SPRINT 2
 
 ## Seguir Haciendo: 
 
 * Reuniones por zoom ✔ 
 * Actualizacion constante del tablero de trabajo ✔
+* 
 
 ## Hacer mas: 
 
-* Crear metas realizables a corto y largo plazo.
 * Organizacion general.
+* implementar nuevos horarios acorde a cada integrante.
 
 ## Empezar a hacer : 
-
-* Pactar e implementar nuevos horarios acorde a cada integrante.
+* Implementación de daily/weekly standups
 
 ## Hacer menos: 
 
@@ -45,4 +46,4 @@
 
 ## Dejar de hacer: 
 
-* Usar unicamente un medio de comunicacion ❌.
+*  ❌.
