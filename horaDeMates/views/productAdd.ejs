@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('./partials/head.ejs') %>
+
+    <body class="home">
+        <%- include('./partials/header.ejs') %>
+
+            <div class="formulario">
+                <form action="" method="POST">
+                    <label for="title">
+                        <p>Title</p>
+                    </label>
+                    <div>
+                        <input type="text" class="" name="title" required>
+                    </div>
+                    <label for="precio">
+                        <p> Precio</p>
+                    </label>
+                    <div>
+                        <input type="text" class="" name="precio" required>
+                    </div>
+                    <label for="imagen">
+                        <p>Imagen</p>
+                    </label>
+                    <div>
+                        <input type="text" class="" name="precio" required>
+                    </div>
+                </form>
+            </div>
+
+            <%- include('./partials/footer.ejs') %>
+                <%- include('./partials/scripts.ejs') %>
+    </body>
+
+</html>

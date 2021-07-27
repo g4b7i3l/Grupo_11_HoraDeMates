@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('./partials/head.ejs') %>
+
+    <body class="detalleDeProducto">
+        <%- include('./partials/header.ejs') %>
+            <main class="menu">
+                <div class="producto">
+                    <img src="/images/mate.jpg" alt="">
+                </div>
+                <div class="descripcion-producto">
+                    <h2>Mate de De Acero dashed</h2>
+                    <span>$1900</span>
+                    <div class="container">
+                        <p> - 2 + </p>
+                        <span> Cantidad </span>
+                    </div>
+                    <p>Producto artesanal con excelente diseño y confección. Posee un estilo peculiar y una estructura
+                        sin igual, en combinacion
+                        de metal y cuero de excelencia y calidad. </p>
+                </div>
+                <section class="box">
+                    <span class="sub-box">Añadir al carrito</span>
+                    <h5>Envío Gratis a Todo el País</h5>
+                </section>
+            </main>
+            <%- include('./partials/footer.ejs') %>
+
+                <%- include('./partials/scripts.ejs') %>
+    </body>
+
+</html>

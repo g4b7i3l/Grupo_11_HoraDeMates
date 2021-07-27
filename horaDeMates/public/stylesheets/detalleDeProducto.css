@@ -1,0 +1,161 @@
+.detalleDeProducto{
+ 
+    background: radial-gradient(circle, rgba(47,47,47,1) 0%, rgba(0,0,0,1) 99%);
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+
+
+.detalleDeProducto .menu .producto img{ 
+    width: 80%;
+    padding: 15px;
+    margin-left: 40px;
+}
+.detalleDeProducto .descripcion-producto{
+    color: white;
+    text-align: center;
+    margin-left: 15px;
+    font-size: 12px;
+    font-family:  Tahoma, Geneva, Verdana, sans-serif;
+    
+
+}
+.detalleDeProducto .menu .container{ 
+    display: flex; 
+    text-align: center;
+    width: 50%;
+    margin-top: 11px;
+    margin-bottom: 11px;
+    justify-content: space-around;
+   
+
+}
+.detalleDeProducto .menu .container p{
+    margin-left: -10px;
+    border: white solid 2px;
+    font-weight: bold;
+    width: 35%;
+    text-align: center;
+}
+
+.detalleDeProducto .menu .container span{ 
+   margin-right: 8px;
+   font-weight: italic;
+   text-align: center;
+   margin-top: 2px;
+
+}
+
+.detalleDeProducto .menu .box{
+   text-align: center;
+    width: 100%;
+    
+}
+.detalleDeProducto .menu .box .sub-box{
+    margin: auto;
+    width: 50%;
+    display: block;
+    border-style: solid;
+    border-color: white;
+    background-color: gray;
+    color: black;
+    font-weight: bold ;
+    padding: 15px;
+   
+ }
+ .detalleDeProducto .menu h5{
+     margin-top: 12px;
+    color: whitesmoke ;
+    font-size: 8px;
+     
+ }
+ 
+
+
+
+@media (min-width:426){
+
+.menu{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+ }
+ 
+ .menu.producto {
+     text-align: center;
+     align-items: center;
+     margin-left: 199px;
+     background-color: darkorchid;
+    
+ }
+  .detalleDeProducto .producto {
+        width: 45%;
+        
+  } 
+.detalleDeProducto .menu .producto img{ 
+    width: 100%;
+    
+
+}
+.detalleDeProducto .menu .container{ 
+    display: flex;
+    width: 80%;
+    padding: 0px;
+    justify-content: space-around;
+   
+}
+.detalleDeProducto .menu .container span{ 
+    margin-top: -2px;
+font-size: 18px;
+}
+
+.detalleDeProducto .descripcion-producto{
+ margin-right: 40px;
+ margin-top: 10px;
+ width: 30%;
+ font-size: 13px;
+ }
+ .detalleDeProducto .menu .box .sub-box{
+     margin: auto;
+    width: 180px;
+    height: 20px;
+margin-top: 12px;
+ }
+ .detalleDeProducto .menu h5{
+    margin-top: 12px;
+   color: whitesmoke ;
+   font-size: 12px;
+    
+}
+
+@media (min-width:769px){
+    .detalleDeProducto .descripcion-producto{
+        margin-right: 40px;
+        margin-top: 10px;
+        width: 30%;
+        font-size: 20px;
+
+    
+   }
+   .detalleDeProducto .menu .container span{ 
+    margin-top: -5px;
+    font-size: 28px;
+}
+   }
+   .detalleDeProducto .menu .box .sub-box{
+       margin-right: 10px;
+       width: 400px;
+       height: 50px;  
+     }
+   .detalleDeProducto .menu h5{
+       display: flex;
+    margin-top: 18px;
+    float: right;
+    margin-right: 115px;
+   color: whitesmoke ;
+   font-size: 18px;
+    
+}
+
+}
