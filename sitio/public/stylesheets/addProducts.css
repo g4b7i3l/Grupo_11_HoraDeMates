@@ -1,0 +1,39 @@
+
+.addProducts .formulario{
+    background: radial-gradient(circle, rgba(47,47,47,1) 0%, rgba(0,0,0,1) 99%);
+    display: flex;
+    flex-wrap: wrap;
+    margin: -2px;
+}
+.addProducts .boxForm{
+    background: radial-gradient(circle, rgba(47,47,47,1) 0%, rgba(0,0,0,1) 99%);
+    text-align: center;
+    padding: 15px;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    width: 100%;
+}
+
+
+.addProducts .boxForm .input-form{
+    width: 200px;
+  
+}
+.addProducts .boxForm .input-title{
+    width: 200px;
+  margin-left: 35px;
+}
+.addProducts .boxForm .input-price{
+    margin-left: 30px;
+    width: 200px;
+  
+}
+
+
+.addProducts .boxForm select{
+    width: 200px;
+    height: 28px;
+}
+
+

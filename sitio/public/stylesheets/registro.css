@@ -1,0 +1,73 @@
+.registro{background: radial-gradient(circle, rgba(47,47,47,1) 0%, rgba(0,0,0,1) 99%);
+}
+.registro main h2{
+    color: white;
+    margin-bottom: 10px;
+    padding: 20px 0 30px;
+}
+.registro .contenedor{
+background-color: #848484;
+margin-top: 20px;
+padding-bottom: 70px;
+text-align:center;
+}
+.registro .caja{
+    border: white 1px solid;
+background-color: white;
+margin: 10px 20px;
+padding: 18.2px;
+border-radius: 7px;
+height: 50px;
+}
+.registro .pformulario2 ,.pformulario{
+  color: #949494;
+  margin-bottom: 1px;
+}
+
+.registro main i{
+    margin-right: 10px;
+}
+
+.registro main .inputs {
+text-align: center;
+display: flex;
+justify-content: center;
+}
+.registro main .formulario{
+    margin: 80px 0 80px;
+    text-align: center;
+}
+.registro .o-tambien{
+    color: gray;
+    margin-top: 40px;
+}
+.registro .formulario button{
+    margin: 10px 0 0 41%;
+}
+.registro .registrarse {
+    margin-top: 10px;
+}
+.registro main .button {
+    border: none;
+    width: 108px;
+    height: 30px;
+    text-align: center;
+    font-weight: bold;
+    background-color: darkslategrey;
+    color: #848484;
+}
+.registro .espacio{
+    border-bottom: solid 1px gray;
+    width: 35%;
+    margin: 0 20px;
+}
+.registro .espacio-caja{
+    display: flex;
+    justify-content: space-between;
+}
+/* -------------------- tablet ----------------------- */
+@media(min-width:361px){
+    .registro .contenedor{
+margin: 10% 20% 20%;
+    }
+}

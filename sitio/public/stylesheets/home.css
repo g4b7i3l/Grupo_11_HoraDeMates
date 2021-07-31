@@ -1,0 +1,148 @@
+
+.home {
+    background: rgb(47,47,47);
+    background: radial-gradient(circle, rgba(47,47,47,1) 0%, rgba(0,0,0,1) 99%);
+    max-width: 1140px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.home h2{
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style:italic;
+    text-transform: uppercase;
+    margin: 10px;
+    padding-top: 10px;
+}
+/* CARRUSEL*/
+.home .menu .carousel {
+    display: none;
+}
+
+
+/*SECCION PRODUCTOS*/
+
+.home .menu .productos{
+    background: rgb(47,47,47);
+    background: radial-gradient(circle, rgba(47,47,47,1) 0%, rgba(0,0,0,1) 99%);
+   display: flex;
+   flex-wrap: wrap;
+   margin: 15px 15px;
+   justify-content: space-around;
+}
+
+.home .menu .producto{
+    margin-top: 10px;
+ 
+
+ }
+ 
+ .home .producto .imagen img{
+    border-style: ridge;
+    border-color: grey;
+    
+    
+}
+
+.home .resumen .descripcion{
+    color: white;
+    font-size: 16px;
+    font-weight: 200;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif
+
+}
+
+
+.home .resumen .precio{
+    color: white;
+    font-size: 10px;
+    text-align: center;
+    margin-top: 5px;
+}  
+    
+    /*Extra-Footer*/
+
+.home .extra-footer .container{
+    color:white;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.home .extra-footer input{
+    background: rgb(47,47,47);
+    background: radial-gradient(circle, rgba(47,47,47,1) 0%, rgba(0,0,0,1) 99%);;
+    color: azure;
+    margin-left: 15px;
+    margin-bottom: 25px;
+}
+.home .extra-footer .form{
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    margin-left: 15px;
+}
+
+@media (min-width:426px){
+    
+.home .menu .carrusel img{
+    display: block;
+    height: 250px ;
+}
+.home .menu .productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+ }
+
+.home .producto .imagen img{
+    display: flex;
+    margin: 15px 15px;
+    width: 220px;
+    height: 200px;
+ 
+}
+/* CARRUSEL*/
+.home .menu .carousel {
+    display: block;
+}
+
+
+
+/*extra footer*/
+
+.home .extra-footer{
+    width: 90%;
+}
+.home .extra-footer .form{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  width: 100%;
+  
+}
+.home .extra-footer .form input{ 
+    width: 30%;
+}
+
+
+}
+                                        
+@media (min-width:769px){
+
+    .home .extra-footer .form{
+        display: flex;
+        
+    }
+ .home .menu .carrusel img{  
+display: block;
+ }
+
+.home .producto .imagen img{
+  width: 270px;
+}
+}
