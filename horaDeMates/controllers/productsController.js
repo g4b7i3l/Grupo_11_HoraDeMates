@@ -5,7 +5,18 @@ module.exports = {
         })
     },
     detalleDeProducto : (req,res) => {
-        return res.render ('detalleDeProducto',{
+        let producto = productos.find(producto => producto.id === +req.params.id);
+
+        return res.render('detalleDeProducto',{
+            producto,
+            productos
         })
-    }
+    },
+    add : (req,res) => {
+        return res.render('productAdd',{
+            categorias,
+           productos
+        })
+
+}
 }

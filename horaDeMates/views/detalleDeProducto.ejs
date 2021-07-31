@@ -7,18 +7,19 @@
         <%- include('./partials/header.ejs') %>
             <main class="menu">
                 <div class="producto">
-                    <img src="/images/mate.jpg" alt="">
+                    <img src="/images/<%= producto.image %> " alt="">
                 </div>
                 <div class="descripcion-producto">
-                    <h2>Mate de De Acero dashed</h2>
-                    <span>$1900</span>
+                    <h2><%= producto.title %></h2>
+                    <span>$<%= producto.price %></span>
                     <div class="container">
                         <p> - 2 + </p>
                         <span> Cantidad </span>
                     </div>
-                    <p>Producto artesanal con excelente diseño y confección. Posee un estilo peculiar y una estructura
-                        sin igual, en combinacion
-                        de metal y cuero de excelencia y calidad. </p>
+                   
+                        <p><%= producto.description %></p>
+                   
+                    
                 </div>
                 <section class="box">
                     <span class="sub-box">Añadir al carrito</span>

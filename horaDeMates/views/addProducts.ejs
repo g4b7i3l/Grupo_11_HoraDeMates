@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('./partials/head.ejs') %>
+
+    <body class="addProducts">
+        <%- include('./partials/header.ejs') %>
+
+            <form method="POST">
+               <div class="formulario">
+				<div class="boxForm">
+					<label for="modelo" class="log--label">Título :</label>
+					<input
+						class="input-form"
+						type="text"
+						name="modelo"
+						id="modelo"
+					/>
+				
+				</div>
+
+				<div class="boxForm">
+					<label for="color" class="log--label">Descripción:</label>
+					<input
+						class="input-form"
+						type="text"
+						name="color"
+						id="color"
+					/>
+					
+				</div>
+
+                    <div class="boxForm">
+                        <label for="category">Categorías:</label>
+                        <select  name="" id="category" value=Categorias>
+                            <option value="category"></option>
+                            <option value="category">Mates</option>
+                            <option value="category">Yerbas</option>
+                            <option value="category">Bolsos Materos</option>
+                            <option value="category">Bombillas</option>
+                            <option value="category">Otros</option>
+                            </select>
+                    </div>
+    
+    
+                    <div class="boxForm">
+                        <label for="valor" class="log--label">Precio :</label>
+                        <input
+                            class="input-form"
+                            type="text"
+                            name="valor"                  
+                        />
+                       
+                    </div>
+    
+                    <div class="boxForm">
+                        <label  class="log--label">Cargar foto :</label>
+                        <input
+                             class="input-form"
+                            type="file"
+                            name="file"
+                            multiple
+                        />
+                    </div>
+                    <div class="boxForm">
+                    <button class="btn btn-dark"  type="submit">Guardar</button>
+                </div>
+
+                </div> 
+        </form>
+            <%- include('./partials/footer.ejs') %>
+                <%- include('./partials/scripts.ejs') %>
+    </body>
+
+</html>
