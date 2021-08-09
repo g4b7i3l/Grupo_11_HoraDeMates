@@ -47,3 +47,33 @@
 ## Dejar de hacer: 
 
 *  ❌.
+
+
+# RETROSPECTIVA DEL → SPRINT 3
+
+## Seguir Haciendo: 
+
+* Reuniones por zoom ✔ 
+* Actualizacion constante del tablero de trabajo ✔
+
+
+## Hacer mas: 
+
+* Organizacion general.
+* Practicas en conjunto.
+
+## Empezar a hacer : 
+
+*  Repasos de contenidos vistos en playGround
+
+## Hacer menos: 
+
+* Trabajos unicamente de forma invididual.
+
+## Dejar de hacer: 
+
+* Dejar a último moneto la entrega de los trabajos❌.
+
+
+
+
