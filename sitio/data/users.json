@@ -1,0 +1,102 @@
+[
+    {
+        "id" : "?",
+        "nombre" : "gabriel",
+        "apellido" : "segovia",
+        "email": "yerbas",
+        "contraseña" : 2700,
+        "categoria" : 2700,
+        "image" : "mate.jpg"
+    },
+    {
+        "id" : 1,
+        "nombre" : "gabriel",
+        "apellido" : "segovia",
+        "email": "yerbas",
+        "contraseña" : 2700,
+        "categoria" : 2700,
+        "image" : "mate.jpg"
+    },
+    {
+        "id" : 2,
+        "nombre" : "gabriel",
+        "apellido" : "segovia",
+        "email": "yerbas",
+        "contraseña" : 2700,
+        "categoria" : 2700,
+        "image" : "mate.jpg"
+    },
+    {
+        "id" : 3,
+        "nombre" : "gabriel",
+        "apellido" : "segovia",
+        "email": "yerbas",
+        "contraseña" : 2700,
+        "categoria" : 2700,
+        "image" : "mate.jpg"
+    },
+    {
+        "id" : 4,
+        "nombre" : "gabriel",
+        "apellido" : "segovia",
+        "email": "yerbas",
+        "contraseña" : 2700,
+        "categoria" : 2700,
+        "image" : "mate.jpg"
+    },
+    {
+        "id" : 5,
+        "nombre" : "gabriel",
+        "apellido" : "segovia",
+        "email": "yerbas",
+        "contraseña" : 2700,
+        "categoria" : 2700,
+        "image" : "mate.jpg"
+    },
+    {
+        "id" : 6,
+        "nombre" : "gabriel",
+        "apellido" : "segovia",
+        "email": "yerbas",
+        "contraseña" : 2700,
+        "categoria" : 2700,
+        "image" : "mate.jpg"
+    },
+    {
+        "id" : 7,
+        "nombre" : "gabriel",
+        "apellido" : "segovia",
+        "email": "yerbas",
+        "contraseña" : 2700,
+        "categoria" : 2700,
+        "image" : "mate.jpg"
+    },
+    {
+        "id" : 8,
+        "nombre" : "gabriel",
+        "apellido" : "segovia",
+        "email": "yerbas",
+        "contraseña" : 2700,
+        "categoria" : 2700,
+        "image" : "mate.jpg"
+    },
+    {
+        "id" : 9,
+        "nombre" : "gabriel",
+        "apellido" : "segovia",
+        "email": "yerbas",
+        "contraseña" : 2700,
+        "categoria" : 2700,
+        "image" : "mate.jpg"
+    },
+    {
+        "id" : 10,
+        "nombre" : "gabriel",
+        "apellido" : "segovia",
+        "email": "yerbas",
+        "contraseña" : 2700,
+        "categoria" : 2700,
+        "image" : "mate.jpg"
+    }
+    
+]

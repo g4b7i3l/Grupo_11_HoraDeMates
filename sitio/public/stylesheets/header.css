@@ -193,6 +193,15 @@ header div.search .lupa {
     font-size: 9px;
     color: gainsboro;
 }
+header .btn-secondary {
+    color: #fff;
+    background-color: transparent;
+    border-color: transparent;
+    font-size: 17px;
+
+}
+
+
 }
 
 @media (min-width:769px)
@@ -239,6 +248,12 @@ header .login-bar .logoIn{
 header .login-bar .carrito{
    font-size: 20px;
     
+}
+header .btn-secondary {
+    color: #fff;
+    background-color: transparent;
+    border-color: transparent;
+    font-size: 25px;
 }
 
 }

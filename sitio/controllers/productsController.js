@@ -12,11 +12,6 @@ module.exports = {
             productos
         })
     },
-    add : (req,res) => {
-        return res.render('productAdd',{
-            categorias,
-           productos
-        })
+    
 
-}
 }
