@@ -4,71 +4,53 @@
 
     <body class="addProducts">
         <%- include('./partials/header.ejs') %>
+    
 
-        <form method="POST" action="/sitio/views/index.ejs">
-            <div class="formulario">
-             <div class="boxForm">
-                 <label for="titulo" class="">Título :</label>
-                 <input
-                     class="input-title"
-                     type="text"
-                     name="titulo"
-                     id="titulo"
-                 />
-             
-             </div>
-        
-             <div class="boxForm">
-                 <label for="descripcion" class="">Descripción:</label>
-                 <input
-                     class="input-form"
-                     type="text"
-                     name="descripcion"
-                     id="descripcion"
-                 />
-                 
-             </div>
-        
-                 <div class="boxForm">
-                     <label for="category">Categorías:</label>
-                     <select  name="categoria" id="category" value=Categorias>
-                         <option value="category"></option>
-                         <option value="category">Mates</option>
-                         <option value="category">Yerbas</option>
-                         <option value="category">Bolsos Materos</option>
-                         <option value="category">Bombillas</option>
-                         <option value="category">Otros</option>
-                         </select>
-                 </div>
-        
-        
-                 <div class="boxForm">
-                     <label for="valor" class="">Precio :</label>
-                     <input
-                         class="input-price"
-                         type="text"
-                         name="valor"                  
-                     />
-                    
-                 </div>
-        
-                 <div class="boxForm">
-                     <label  class="">Cargar foto :</label>
-                     <input
-                          class="input-form"
-                         type="file"
-                         name="file"
-                         multiple
-                     />
-                 </div>
-               <div class="boxForm">
-                 <button class="btn btn-dark" type="submit" >Guardar</button>
-               </div>
-             </div> 
-        </form>
-  
-            <%- include('./partials/footer.ejs') %>
-                <%- include('./partials/scripts.ejs') %>
+                    <form action="" method="POST">
+                        <div class="formulario">
+                            <div class="boxForm">
+                                <label for="titulo" class="">Título :</label>
+                                <input class="input-title" type="text" name="title" id="titulo" />
+
+                            </div>
+
+                            <div class="boxForm">
+                                <label for="descripcion" class="">Descripción:</label>
+                                <input class="input-form" type="text" name="description" id="descripcion" />
+
+                            </div>
+
+                            <div class="boxForm">
+                                <label for="category">Categorías:</label>
+                                <select name="category" id="category" value="Categorias">
+                                    <option value="category"></option>
+                                    <option value="category">Mates</option>
+                                    <option value="category">Yerbas</option>
+                                    <option value="category">Bolsos Materos</option>
+                                    <option value="category">Bombillas</option>
+                                    <option value="category">Otros</option>
+                                </select>
+                            </div>
+
+
+                            <div class="boxForm">
+                                <label for="valor" class="">Precio :</label>
+                                <input class="input-price" type="text" name="price" />
+
+                            </div>
+
+                            <div class="boxForm">
+                                <label class="">Cargar foto :</label>
+                                <input class="input-form" type="file" name="file" multiple />
+                            </div>
+                            <div class="boxForm">
+                                <input type="submit" value="guardar" />
+                            </div>
+                        </div>
+                    </form>
+                    <%- include('./partials/footer.ejs') %>
+                    <%- include('./partials/scripts.ejs') %>
     </body>
+
 
 </html>
