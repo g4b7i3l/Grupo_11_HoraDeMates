@@ -1,83 +1,98 @@
-       
 [
-    {
-        "id" : 1,
-        "title" : "Mate cocodrilo",
-        "description" : "fe ipsum",
-        "category": "yerbas",
-        "price" : 2700,
-        "image" : "mate.jpg"
-    },
-    {
-        "id" : 2,
-        "title" : "Mate oro",
-        "description" : "fede1 ipsum",
-        "category": "yerbas",
-        "price" : 2600,
-        "image" : "mate1.jpeg"
-    },
-    {
-        "id" : 3,
-        "title" : "Mate simple",
-        "description" : "asdasd ipsum",
-        "category": "yerbas",
-        "price" : 1200,
-        "image" : "mate2.jpeg"
-    },
-    {
-        "id" : 4,
-        "title" : "Mate style dashed",
-        "description" : "lorefem ipsum",
-        "category": "yerbas",
-        "price" : 2500,
-        "image" : "mate3.jpeg"
-    },
-    {
-        "id" : 5,
-        "title" : "Mate de acero black",
-        "description" : "lorefem ipsum",
-        "category": "yerbas",
-        "price" : 2700,
-        "image" : "mate4.jpeg"
-    },
-    {
-        "id" : 6,
-        "title" : "mate de acero white",
-        "description" : "lorefem ipsum",
-        "category": "yerbas",
-        "price" : 1999,
-        "image" : "mate-blanco.png"
-    },
-    {
-        "id" : 7,
-        "title" : "Mate de acero black",
-        "description" : "lorefem ipsum",
-        "category": "yerbas",
-        "price" : 1999,
-        "image" : "mate-negro.png"
-    },
-    {
-        "id" : 8,
-        "title" : "Equipo matero green",
-        "description" : "lorefem ipsum",
-        "category": "yerbas",
-        "price" : 5999,
-        "image" : "equipo1.jpeg"
-    },
-    {
-        "id" : 9,
-        "title" : "Equipo matero blue-dark",
-        "description" : "mate ipsum",
-        "category": "yerbas",
-        "price" : 5999,
-        "image" : "equipo2.jpeg"
-    },
-    {
-        "id" : 10,
-        "title" : "Equipo matero blue-dark",
-        "description" : "lorefem ipsum",
-        "category": "yerbas",
-        "price" : 5999,
-        "image" : "equipo3.jpeg"
-    }
+  {
+    "id": 1,
+    "title": "Mate cocodrilo",
+    "description": "fe ipsum",
+    "category": "yerbas",
+    "price": 2700,
+    "image": "mate.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Mate oro",
+    "description": "fede1 ipsum",
+    "category": "yerbas",
+    "price": 2600,
+    "image": "mate1.jpeg"
+  },
+  {
+    "id": 3,
+    "title": "Mate simple",
+    "description": "asdasd ipsum",
+    "category": "yerbas",
+    "price": 1200,
+    "image": "mate2.jpeg"
+  },
+  {
+    "id": 4,
+    "title": "Mate style dashed",
+    "description": "lorefem ipsum",
+    "category": "yerbas",
+    "price": 2500,
+    "image": "mate3.jpeg"
+  },
+  {
+    "id": 5,
+    "title": "Mate de acero black",
+    "description": "lorefem ipsum",
+    "category": "yerbas",
+    "price": 2700,
+    "image": "mate4.jpeg"
+  },
+  {
+    "id": 6,
+    "title": "mate de acero white",
+    "description": "lorefem ipsum",
+    "category": "yerbas",
+    "price": 1999,
+    "image": "mate-blanco.png"
+  },
+  {
+    "id": 7,
+    "title": "Mate de acero black",
+    "description": "lorefem ipsum",
+    "category": "yerbas",
+    "price": 1999,
+    "image": "mate-negro.png"
+  },
+  {
+    "id": 8,
+    "title": "Equipo matero green",
+    "description": "lorefem ipsum",
+    "category": "yerbas",
+    "price": 5999,
+    "image": "equipo1.jpeg"
+  },
+  {
+    "id": 9,
+    "title": "Equipo matero blue-dark",
+    "description": "mate ipsum",
+    "category": "yerbas",
+    "price": 5999,
+    "image": "equipo2.jpeg"
+  },
+  {
+    "id": 10,
+    "title": "Equipo matero blue-dark",
+    "description": "lorefem ipsum",
+    "category": "yerbas",
+    "price": 5999,
+    "image": "equipo3.jpeg"
+  },
+  {
+    "id": 11,
+    "title": "fede",
+    "price": 12,
+    "category": "category",
+    "description": "de",
+    "image": "default-image.png"
+  },
+  {
+    "id": 12,
+    "title": "",
+    "price": 0,
+    "category": "category",
+    "description": "",
+    "image": "default-image.png"
+  }
 ]

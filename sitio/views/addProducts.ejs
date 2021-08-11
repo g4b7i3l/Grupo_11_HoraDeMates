@@ -4,50 +4,52 @@
 
     <body class="addProducts">
         <%- include('./partials/header.ejs') %>
-            <form action="" method="POST">
-                <div class="formulario">
-                    <div class="boxForm">
-                        <label for="titulo" class="">Título :</label>
-                        <input class="input-title" type="text" name="title" id="titulo" />
+    
 
-                    </div>
+                    <form action="/admin/addProducts" method="POST">
+                        <div class="formulario">
+                            <div class="boxForm">
+                                <label for="titulo" class="">Título :</label>
+                                <input class="input-title" type="text" name="title" id="titulo" />
 
-                    <div class="boxForm">
-                        <label for="descripcion" class="">Descripción:</label>
-                        <input class="input-form" type="text" name="description" id="descripcion" />
+                            </div>
 
-                    </div>
+                            <div class="boxForm">
+                                <label for="descripcion" class="">Descripción:</label>
+                                <input class="input-form" type="text" name="description" id="descripcion" />
 
-                    <div class="boxForm">
-                        <label for="category">Categorías:</label>
-                        <select name="category" id="category" value="Categorias">
-                            <option value="category"></option>
-                            <option value="category">Mates</option>
-                            <option value="category">Yerbas</option>
-                            <option value="category">Bolsos Materos</option>
-                            <option value="category">Bombillas</option>
-                            <option value="category">Otros</option>
-                        </select>
-                    </div>
+                            </div>
+
+                            <div class="boxForm">
+                                <label for="category">Categorías:</label>
+                                <select name="category" id="category" value="Categorias">
+                                    <option value="category"></option>
+                                    <option value="category">Mates</option>
+                                    <option value="category">Yerbas</option>
+                                    <option value="category">Bolsos Materos</option>
+                                    <option value="category">Bombillas</option>
+                                    <option value="category">Otros</option>
+                                </select>
+                            </div>
 
 
-                    <div class="boxForm">
-                        <label for="valor" class="">Precio :</label>
-                        <input class="input-price" type="text" name="price" />
+                            <div class="boxForm">
+                                <label for="valor" class="">Precio :</label>
+                                <input class="input-price" type="text" name="price" />
 
-                    </div>
+                            </div>
 
-                    <!--  <div class="boxForm">
+                            <div class="boxForm">
                                 <label class="">Cargar foto :</label>
                                 <input class="input-form" type="file" name="file" multiple />
-                            </div> -->
-                    <div class="boxForm">
-                        <button type="submit" class="btn btn-dark">Guardar</button>
-                    </div>
-                </div>
-            </form>
-            <%- include('./partials/footer.ejs') %>
-                <%- include('./partials/scripts.ejs') %>
+                            </div>
+                            <div class="boxForm">
+                                <button type="submit" class="btn btn-dark">Guardar</button>
+                            </div>
+                        </div>
+                    </form>
+                    <%- include('./partials/footer.ejs') %>
+                    <%- include('./partials/scripts.ejs') %>
     </body>
 
 
