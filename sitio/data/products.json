@@ -10,8 +10,8 @@
   {
     "id": 2,
     "title": "Mate oro",
-    "description": "fede1 ipsum",
-    "category": "yerbas",
+    "description": "Terrible matardo!!!  ",
+    "category": "mates",
     "price": 2600,
     "image": "mate1.jpeg"
   },
@@ -78,21 +78,5 @@
     "category": "yerbas",
     "price": 5999,
     "image": "equipo3.jpeg"
-  },
-  {
-    "id": 11,
-    "title": "fede",
-    "price": 12,
-    "category": "category",
-    "description": "de",
-    "image": "default-image.png"
-  },
-  {
-    "id": 12,
-    "title": "",
-    "price": 0,
-    "category": "category",
-    "description": "",
-    "image": "default-image.png"
   }
 ]
