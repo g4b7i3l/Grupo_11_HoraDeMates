@@ -6,7 +6,7 @@
         <%- include('./partials/header.ejs') %>
     
 
-                    <form action="/admin/addProducts" method="POST">
+                    <form action="/admin/addProducts" method="POST" enctype="multipart/form-data">
                         <div class="formulario">
                             <div class="boxForm">
                                 <label for="titulo" class="">Título :</label>
@@ -41,7 +41,7 @@
 
                             <div class="boxForm">
                                 <label class="">Cargar foto :</label>
-                                <input class="input-form" type="file" name="file" multiple />
+                                <input class="input-form" type="file" name="image" multiple />
                             </div>
                             <div class="boxForm">
                                 <button type="submit" class="btn btn-dark">Guardar</button>
