@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <%- include('./partials/head.ejs') %>
 
@@ -22,6 +22,10 @@
                     
                 </div>
                 <section class="box">
+                    <button class="btn btn-dark"><a href="/admin/editProducts/<%= producto.id %> ">Editar</a></button>
+                    <form action="/admin/delete/<%= producto.id %>?_method=DELETE " method="POST">
+                    <button type="submit" class="btn btn-dark">Eliminar</button>
+                    </form>
                     <span class="sub-box">Añadir al carrito</span>
                     <h5>Envío Gratis a Todo el País</h5>
                 </section>
