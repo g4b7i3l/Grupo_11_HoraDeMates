@@ -47,7 +47,7 @@
 ## Dejar de hacer: 
 
 *  ❌.
-
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 # RETROSPECTIVA DEL → SPRINT 3
 
@@ -72,7 +72,35 @@
 
 ## Dejar de hacer: 
 
-* Dejar a último moneto la entrega de los trabajos❌.
+* Dejar a último momento la entrega de los trabajos❌.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# RETROSPECTIVA DEL → SPRINT 4
+
+## Seguir Haciendo: 
+
+* Reuniones por zoom ✔ 
+* Actualizacion constante del tablero de trabajo ✔
+* Enfoque en trabajos de manera grupal
+
+
+## Hacer mas: 
+
+* Organizacion general.
+* 
+
+## Empezar a hacer : 
+
+*  Revisión completa antes de entregar el sprint
+
+## Hacer menos: 
+
+* Reuniones demasiado extensas.
+
+## Dejar de hacer: 
+
+* Dejar a último momento la entrega de los trabajos❌.
+
 
 
 
