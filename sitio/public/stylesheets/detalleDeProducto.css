@@ -140,9 +140,10 @@ margin-top: 12px;
 }
    
    .detalleDeProducto .menu .box .sub-box{
-       margin-right: 10px;
-       width: 400px;
+       margin-right: 50px;
+       width: 350px;
        height: 50px;  
+       margin-top: -50px;
      }
    .detalleDeProducto .menu h5{
        display: flex;
@@ -159,4 +160,21 @@ margin-top: 12px;
     text-align: center;
     align-items: center;
 }
+.detalleDeProducto .menu .button-delete-edit{
+   display: flex;
+   margin-left: 210px;
+   margin-top: 5px;
+   background-color: transparent;
+   color: grey;
+
+   
+    
 }
+.detalleDeProducto .menu .button-delete-edit button a{
+    color: white;
+    margin-right: 49px;
+    font-size: 18px;
+    
+  
+  
+}}

@@ -1,13 +1,5 @@
 [
   {
-    "id": 1,
-    "title": "Mate cocodrilo",
-    "description": "fe ipsum",
-    "category": "yerbas",
-    "price": 2700,
-    "image": "mate.jpg"
-  },
-  {
     "id": 2,
     "title": "Mate oro",
     "description": "Terrible matardo!!!  ",
@@ -32,14 +24,6 @@
     "image": "mate3.jpeg"
   },
   {
-    "id": 5,
-    "title": "Mate de acero black",
-    "description": "lorefem ipsum",
-    "category": "yerbas",
-    "price": 2700,
-    "image": "mate4.jpeg"
-  },
-  {
     "id": 6,
     "title": "mate de acero white",
     "description": "lorefem ipsum",
@@ -56,27 +40,27 @@
     "image": "mate-negro.png"
   },
   {
-    "id": 8,
-    "title": "Equipo matero green",
-    "description": "lorefem ipsum",
-    "category": "yerbas",
-    "price": 5999,
-    "image": "equipo1.jpeg"
-  },
-  {
-    "id": 9,
-    "title": "Equipo matero blue-dark",
-    "description": "mate ipsum",
-    "category": "yerbas",
-    "price": 5999,
-    "image": "equipo2.jpeg"
-  },
-  {
     "id": 10,
     "title": "Equipo matero blue-dark",
     "description": "equipo matero",
     "category": "mates",
     "price": 5999,
     "image": "equipo3.jpeg"
+  },
+  {
+    "id": 11,
+    "title": "Bolso mattioli ",
+    "price": 500,
+    "category": "category",
+    "description": "all green",
+    "image": "equipo1.jpeg"
+  },
+  {
+    "id": 12,
+    "title": "Bolso matero blue",
+    "price": 900,
+    "category": "category",
+    "description": "all blue ",
+    "image": "equipo2.jpeg"
   }
 ]
