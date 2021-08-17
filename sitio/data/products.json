@@ -10,8 +10,8 @@
   {
     "id": 3,
     "title": "Mate simple",
-    "description": "asdasd ipsum",
-    "category": "yerbas",
+    "description": "asdasd ipsum ",
+    "category": "mates",
     "price": 1200,
     "image": "mate2.jpeg"
   },
@@ -26,15 +26,15 @@
   {
     "id": 6,
     "title": "mate de acero white",
-    "description": "lorefem ipsum",
-    "category": "yerbas",
+    "description": "lorefem ipsum ",
+    "category": "mates",
     "price": 1999,
     "image": "mate-blanco.png"
   },
   {
     "id": 7,
     "title": "Mate de acero black",
-    "description": "lorefem ipsum",
+    "description": "Mate black de calidad premium",
     "category": "yerbas",
     "price": 1999,
     "image": "mate-negro.png"
@@ -51,16 +51,24 @@
     "id": 11,
     "title": "Bolso mattioli ",
     "price": 500,
-    "category": "category",
-    "description": "all green",
+    "category": "bolsos",
+    "description": "all green ",
     "image": "equipo1.jpeg"
   },
   {
     "id": 12,
     "title": "Bolso matero blue",
-    "price": 900,
-    "category": "category",
-    "description": "all blue ",
+    "price": 1100,
+    "category": "mates",
+    "description": "Kit matero en color azul",
     "image": "equipo2.jpeg"
+  },
+  {
+    "id": 13,
+    "title": "bolso matero gray",
+    "price": 900,
+    "category": "bolsos",
+    "description": "sencillo,doble cierre ",
+    "image": "image-1629151926702.jfif"
   }
 ]

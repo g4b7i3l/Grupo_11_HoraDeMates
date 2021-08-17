@@ -17,11 +17,11 @@ module.exports = {
             price: +req.body.price,
             category: req.body.category,
             description: req.body.description,
-            image: 'default-image.png',
+            image: req.file ? req.file.filename : 'default-image.png'
         }
         products.push(product);
         fs.writeFileSync(productsFilePath, JSON.stringify(products, null, 2), 'utf-8')
-        return res.redirect('/admin/addProducts')
+        return res.redirect('/')
     },
 
     edit: (req, res) => {
@@ -50,5 +50,4 @@ module.exports = {
         fs.writeFileSync(productsFilePath,JSON.stringify(products,null,2),'utf-8');
         return res.redirect('/')
         }
-
 }

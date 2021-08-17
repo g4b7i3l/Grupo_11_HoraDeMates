@@ -12,6 +12,12 @@ module.exports = {
             productos
         })
     },
-    
-
+    search : (req,res) => {
+        let result = productos.filter(producto => producto.title.toLowerCase().includes(req.query.search.toLowerCase()));
+        return res.render('resultSearch',{
+            result,
+            productos,
+            busqueda : req.query.search
+        })   
+         }, 
 }
