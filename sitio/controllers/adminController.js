@@ -1,14 +1,14 @@
 const fs = require('fs');
 const path = require('path');
 
-const productsFilePath = path.join(__dirname, '../data/products.json');
-let products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
+let {products, guardar} = require('../data/products_db');
 
 module.exports = {
     add: (req, res) => {
         return res.render('addProducts', {
             products
         })
+        
     },
     store: (req, res) => {
         let product = {
@@ -20,7 +20,7 @@ module.exports = {
             image: req.file ? req.file.filename : 'default-image.png'
         }
         products.push(product);
-        fs.writeFileSync(productsFilePath, JSON.stringify(products, null, 2), 'utf-8')
+        guardar(products);
         return res.redirect('/')
     },
 
@@ -30,24 +30,26 @@ module.exports = {
             product
         })
     },
-    update: (req, res) => {
-        const { title, price, description, category } = req.body;
-        products.forEach(product => {
-            if (product.id === +req.params.id) {
-                product.id = +req.params.id;
-                product.title = title;
-                product.price = +price;
-                product.category = category;
-                product.description = description;
-            }
-        });
+    update : (req,res) => {
+        const {title, description,price,category} = req.body;
 
-        fs.writeFileSync(productsFilePath, JSON.stringify(products, null, 2), 'utf-8');
+        let product = products.find(product => product.id === +req.params.id)
+        let productoEditado = {
+            id : +req.params.id,
+            title,
+            description,
+            price : +price,
+            image : req.files ? req.files.filename : product.image, 
+            category
+        }
+
+        let productosModificados = products.map(product => product.id === +req.params.id ? productoEditado : product)
+        guardar(productosModificados)
         return res.redirect('/products/detalleDeProducto/' + req.params.id)
     },
     destroy: (req, res) => {
         products = products.filter(product => product.id !== +req.params.id);
-        fs.writeFileSync(productsFilePath,JSON.stringify(products,null,2),'utf-8');
-        return res.redirect('/')
+        guardar(products);
+        return res.redirect('/');
         }
 }

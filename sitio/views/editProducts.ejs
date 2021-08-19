@@ -4,7 +4,7 @@
 
     <body class="editProducts">
         <%- include('./partials/header.ejs') %>
-            <form action="/admin/editProducts/<%= product.id %>?_method=PUT" method="POST">
+            <form action="/admin/editProducts/<%= product.id %>?_method=PUT" method="POST" >
                 <div class="formulario">
                     <div class="boxForm">
                         <label for="title" class="">Título :</label>
@@ -40,7 +40,7 @@
 
                     <div class="boxForm">
                         <label class="">Cargar foto :</label>
-                        <input class="input-form" type="file" name="file" multiple >
+                        <input class="input-form" type="file" name="image" multiple>
                     </div>
                     <div class="boxForm">
                         <button class="btn btn-dark" type="submit">Guardar</button>
