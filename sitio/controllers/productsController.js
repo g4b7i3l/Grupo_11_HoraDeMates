@@ -28,5 +28,8 @@ module.exports = {
             products,
             busqueda : req.query.category
         })   
-    }
+        
+    },
+
+
 }

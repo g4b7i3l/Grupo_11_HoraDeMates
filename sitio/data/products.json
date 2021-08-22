@@ -34,10 +34,10 @@
   {
     "id": 7,
     "title": "Mate de acero black",
-    "description": "Mate black de calidad premium",
-    "category": "yerbas",
+    "description": "Mate black de calidad premium ",
     "price": 1999,
-    "image": "mate-negro.png"
+    "image": "mate-negro.png",
+    "category": "yerbas"
   },
   {
     "id": 10,

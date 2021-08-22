@@ -32,6 +32,9 @@ height: 50px;
 text-align: center;
 display: flex;
 justify-content: center;
+flex-direction: column;
+color: aliceblue;
+margin: auto;
 }
 .registro main .formulario{
     margin: 80px 0 80px;
@@ -46,16 +49,9 @@ justify-content: center;
 }
 .registro .registrarse {
     margin-top: 10px;
+    margin-right: 90px;
 }
-.registro main .button {
-    border: none;
-    width: 108px;
-    height: 30px;
-    text-align: center;
-    font-weight: bold;
-    background-color: darkslategrey;
-    color: #848484;
-}
+
 .registro .espacio{
     border-bottom: solid 1px gray;
     width: 35%;
@@ -70,4 +66,13 @@ justify-content: center;
     .registro .contenedor{
 margin: 10% 20% 20%;
     }
+}
+
+.registro .registrarse {
+    margin-top: 10px;
+    margin-right: 390px;
+}
+
+.registro .inputs{
+    width: 20%;
 }

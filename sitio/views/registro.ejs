@@ -7,50 +7,96 @@
 
             <main>
                 <div class="formulario">
-                    <form action="/registro" method="">
-                        <label for="nombre">
-                            <p class="pformulario2">Nombre y apellido:</p>
-                        </label>
-                        <div class="inputs"><input type="text" class="primera-barra" name="nombre" >
+                    <form action="/users/registro" method="POST" enctype="multipart/form-data">
+                        <div class="inputs">
+                            <div class="mb-3">
+                                <label for="" class="form-label ">Nombre y Apellido :</label>
+                                <input 
+                                type="text" 
+                                class="form-control"
+                                id="nombre"
+                                name="nombre"
+                                value="<%= locals.oldData ? oldData.nombre : null %>"
+                                >
+
+                                <% if (locals.errors && errors.nombre) { %> 
+                                      <div class="text-danger">
+                                       <%= errors.nombre.msg %> 
+                                      </div>
+                                    <%  } %> 
+                              </div>
+                              <div class="mb-3">
+                                <label for="" class="form-label">Nombre de ID :</label>
+                                <input 
+                                 type="text"
+                                 class="form-control" 
+                                 id="nombreId"
+                                 name="nombreId" 
+                                 value="<%= locals.oldData ? oldData.nombreId : null %>" 
+                                >         <!--Con este if ternario logramos lo que se conoce como PERSISTENCIA DE DATOS -->
+
+                                <% if (locals.errors && errors.nombreId) { %> 
+                                    <div class="text-danger">
+                                     <%= errors.nombreId.msg %> 
+                                    </div>
+                                  <%  } %> 
+                              </div>
+                              <div class="mb-3">
+                                <label for="" class="form-label">Contraseña:</label>
+                                <input 
+                                 type="password"
+                                 class="form-control"
+                                 id="exampleInputPassword1"
+                                 name="password"
+                                 value="<%= locals.oldData ? oldData.password : null %>"
+                                >
+
+                                <% if (locals.errors && errors.password) { %> 
+                                    <div class="text-danger">
+                                     <%= errors.password.msg %> 
+                                    </div>
+                                  <%  } %> 
+                              </div>
+                              <div class="mb-3">
+                                <label for="" class="form-label">Email:</label>
+                                <input 
+                                 type="email" 
+                                 class="form-control"
+                                 id="email" 
+                                 name="email"
+                                 value="<%= locals.oldData ? oldData.email : null %>"
+                                >
+                                <% if (locals.errors && errors.email) { %> 
+                                    <div class="text-danger">
+                                     <%= errors.email.msg %> 
+                                    </div>
+                                  <%  } %> 
+                              </div>
+                              <div class="mb-3">
+                                <label for="" class="form-label">Fecha de nacimiento:</label>
+                                <input 
+                                 type="date" 
+                                 class="form-control"
+                                 id="fecha" 
+                                 name="fecha"
+                                 value="<%= locals.oldData ? oldData.fecha : null %>"
+                                 >
+                                <% if (locals.errors && errors.fecha) { %> 
+                                    <div class="text-danger">
+                                     <%= errors.fecha.msg %> 
+                                    </div>
+                                  <%  } %> 
+                              </div>
+                              <div class="inputs">
+                                <label class="">Cargar foto de perfil :</label>
+                                <input class="input-form" type="file" name="image" accept="image/*">
+                            </div>
                         </div>
-
-                        <label for="usuario">
-                            <p class="pformulario2"> Nombre de ID:</p>
-                        </label>
-                        <div class="inputs"><input type="text" class="primera-barra" name="usuario">
-                        </div>
-
-
-                        <label for="clave">
-                            <p class="pformulario2">Contraseña:</p>
-                        </label>
-                        <div class="inputs"><input type="password" class="primera-barra" name="clave" >
-                        </div>
-
-
-                        <label for="clave">
-                            <p class="pformulario2">Confirmar:</p>
-                        </label>
-                        <div class="inputs"> <input type="password" class="primera-barra" name="clave" >
-                        </div>
-
-
-                        <label for="email">
-                            <p class="pformulario2"> Email:</p>
-                        </label>
-                        <div class="inputs"><input type="email" class="primera-barra" name="email" >
-                        </div>
-
-                        <label for="fecha">
-                            <p class="pformulario2"> Fecha de nacimiento:</p>
-                        </label>
-                        <div class="inputs"><input type="date" class="primera-barra" name="fecha" >
-                        </div>
+                       
 
                         <div class="reg-bor">
                             <div class="registrarse">
-                                <input type="button"
-                                    class="button" value="Registrarse">
+                                <button type="submit" class="btn btn-dark">Registrarse</button>
                             </div>
                         </div>
 
