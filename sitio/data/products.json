@@ -58,10 +58,10 @@
   {
     "id": 12,
     "title": "Bolso matero blue",
-    "price": 1100,
-    "category": "mates",
-    "description": "Kit matero en color azul",
-    "image": "equipo2.jpeg"
+    "description": "Kit matero en color azul ",
+    "price": 1200,
+    "image": "equipo2.jpeg",
+    "category": "mates"
   },
   {
     "id": 13,

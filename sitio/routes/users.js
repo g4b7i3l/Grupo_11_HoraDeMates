@@ -7,18 +7,18 @@ const {registro,login,processRegister} = require ('../controllers/usersControlle
 const {body} = require('express-validator');
 
 const validations = [
-    body('nombre').notEmpty().withMessage('El nombre es obligatorio'),
+    body('nombreCompleto').notEmpty().withMessage('El nombre es obligatorio'),
 
     body('nombreId').notEmpty().withMessage('Debes añadir un nombre de ID'),
 
-    body('password').notEmpty().withMessage('Debes introducir una contraseña')
+    body('contrasenia').notEmpty().withMessage('Debes introducir una contraseña')
     ,
 
     body('email')
     .notEmpty().withMessage('Indica tu email por favor').bail()
     .isEmail().withMessage('Debes escribir un formato de correo válido'),
 
-    body('fecha').notEmpty().withMessage('Indica tu fecha de nacimiento'),
+    body('fechaNacimiento').notEmpty().withMessage('Indica tu fecha de nacimiento'),
 
 ]
 const storage = multer.diskStorage({
