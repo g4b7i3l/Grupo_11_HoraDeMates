@@ -2,6 +2,7 @@
 const fs = require ('fs');
 const path = require ('path');
 const { products } = require('../data/products_db');
+const bcrypt = require('bcryptjs');
 
 const {usuarios, guardar} = require('../data/users_db');
 
@@ -32,7 +33,7 @@ module.exports = {
             id : usuarios.length > 0 ? usuarios[usuarios.length - 1].id + 1 : 1,
             nombreCompleto,
             nombreId,
-            contrasenia,
+            contrasenia:bcrypt.hashSync(contrasenia,10),
             email,
             fechaNacimiento,
             image: req.file ? req.file.filename : 'default-image.png'
@@ -40,11 +41,46 @@ module.exports = {
         
         usuarios.push(usuario);
         guardar(usuarios);
-        return res.redirect('/')
+        return res.redirect('/users/login')
     
     }},
 
     login : (req,res) => {
         return res.render ('login',{
         })
-    }}
+    },
+    processLogin : (req,res) => {
+
+        let errors = validationResult(req);
+        const {email, recordar} = req.body;
+        if(errors.isEmpty()){
+            let usuario = usuarios.find(usuario => usuario.email === email)
+            req.session.userLogin = {
+                id : usuario.id,
+                nombreId : usuario.nombreId,
+                rol : usuario.rol
+            }
+
+            if(recordar){
+                res.cookie('craftsyForEver',req.session.userLogin,{maxAge: 1000 * 60})
+            }
+            return res.redirect('/')
+        }else{
+            return res.render('login',{
+                products,
+                errores : errors.mapped()
+            })
+        }
+    },
+    logout : (req,res) => {
+        req.session.destroy();
+        res.cookie('craftsyForEver',null,{maxAge:-1})
+        return res.redirect('/')
+    },
+    
+    profile : (req,res) => {
+        return res.render('profile',{
+            
+        })
+    }
+}

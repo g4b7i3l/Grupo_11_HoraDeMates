@@ -44,9 +44,14 @@
         </div>
         <div class="logo"><a href="/"><img src="/images/logo-h.png" alt="logo"></a></div>
         <ul class="login-bar">
+          <% if (locals.userLogin) { %>
+            <li><a class="logoIn" href="/users/logout">Cerrar sesión<i class="fas fa-user"></i></a></li>
+            <li><a class="logoIn" href="/users/profile"><%= locals.userLogin.nombreId %><i class="fas fa-user"></i></a></li>
+            <% }else{ %>
             <li><a class="logoIn" href="/users/login">Ingresá<i class="fas fa-sign-in-alt"></i></a></li>
             <li><a class="logoIn" href="/users/registro">Creá tu cuenta<i class="fas fa-user"></i></a></li>
             <li><a class="carrito" href="/products/carrito"> <i class="fas fa-shopping-cart"></i></a></li>
+            <% } %>
         </ul>
         <div class="search">
             <form action="/products/search"><input name="search" type="text" placeholder="Buscar productos,ofertas.."><button class="lupa" type="submit"><i

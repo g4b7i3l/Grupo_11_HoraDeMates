@@ -7,5 +7,14 @@
     "contrasenia": 2700,
     "fechaNacimiento": "2021/11/20",
     "image": "mate.jpg"
-  } 
+  },
+  {
+    "id": 2,
+    "nombreCompleto": "federico cespedes",
+    "nombreId": "fede",
+    "contrasenia": "$2a$10$g5kCd3WNflhrZvTo6r4b3e1.TUxIz3xp/Gj8ZkaW4MFon33TatE8q",
+    "email": "fgcespedes1995@gmail.com",
+    "fechaNacimiento": "1995-05-06",
+    "image": "image-1629774974230.jpg"
+  }
 ]

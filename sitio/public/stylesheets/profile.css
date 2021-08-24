@@ -1,0 +1,21 @@
+.profile {
+    background: radial-gradient(circle, rgba(47,47,47,1) 0%, rgba(0,0,0,1) 99%);
+
+    
+    
+}
+.profile h1{
+   
+    color: antiquewhite;
+    
+    
+}
+
+.profile h2{
+    font-family: 'Times New Roman', Times, serif;
+    color: royalblue;
+    font-size: 100px;
+    font-style: italic;
+    margin-left: 155px;
+    
+}
