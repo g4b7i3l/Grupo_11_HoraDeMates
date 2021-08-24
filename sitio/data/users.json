@@ -16,5 +16,23 @@
     "email": "fgcespedes1995@gmail.com",
     "fechaNacimiento": "1995-05-06",
     "image": "image-1629774974230.jpg"
+  },
+  {
+    "id": 3,
+    "nombreCompleto": "federico cespedes",
+    "nombreId": "Federico",
+    "contrasenia": "$2a$10$mcjBViTJJByaBruOznypgOzkI2QXpUBoJ9S544qW7gxfrLdQOEqd6",
+    "email": "duarteluciana096@gmail.com",
+    "fechaNacimiento": "2021-09-05",
+    "image": "default-image.png"
+  },
+  {
+    "id": 4,
+    "nombreCompleto": "te",
+    "nombreId": "tet",
+    "contrasenia": "$2a$10$hDn3ZCPhGxhgvFaZc7YMnudyU2Thzw/oXXEqplUfx2umIpYFAuOtG",
+    "email": "fede@gmail.com",
+    "fechaNacimiento": "2021-08-17",
+    "image": "default-image.png"
   }
 ]

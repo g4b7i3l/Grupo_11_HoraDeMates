@@ -62,7 +62,7 @@ module.exports = {
             }
 
             if(recordar){
-                res.cookie('craftsyForEver',req.session.userLogin,{maxAge: 1000 * 60})
+                res.cookie('horaDeMates',req.session.userLogin,{maxAge: 1000 * 60})
             }
             return res.redirect('/')
         }else{
