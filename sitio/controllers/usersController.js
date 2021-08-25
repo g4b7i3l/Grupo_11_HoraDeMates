@@ -74,7 +74,7 @@ module.exports = {
     },
     logout : (req,res) => {
         req.session.destroy();
-        res.cookie('craftsyForEver',null,{maxAge:-1})
+        res.cookie('horaDeMates',null,{maxAge:-1})
         return res.redirect('/')
     },
     
