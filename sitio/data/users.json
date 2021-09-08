@@ -15,7 +15,8 @@
     "contrasenia": "$2a$10$g5kCd3WNflhrZvTo6r4b3e1.TUxIz3xp/Gj8ZkaW4MFon33TatE8q",
     "email": "fgcespedes1995@gmail.com",
     "fechaNacimiento": "1995-05-06",
-    "image": "image-1629774974230.jpg"
+    "image": "image-1629774974230.jpg",
+    "rol": "admin"
   },
   {
     "id": 3,
@@ -34,5 +35,15 @@
     "email": "fede@gmail.com",
     "fechaNacimiento": "2021-08-17",
     "image": "default-image.png"
+  },
+  {
+    "id": 5,
+    "nombreCompleto": "sergio",
+    "nombreId": "ser",
+    "contrasenia": "$2a$10$cBVAkkJ6FgvOvK3DhDCFJ.ffEMlGHGI4fdTMrOTJig1eEX8OsK3/2",
+    "email": "sergio1@gmail.com",
+    "fechaNacimiento": "2021-09-29",
+    "image": "default-image.png",
+    "rol": "user"
   }
 ]

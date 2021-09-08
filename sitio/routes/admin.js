@@ -5,6 +5,7 @@ const multer = require('multer');
 const path = require('path');
 
 const addProductValidator = require ('../validations/addProductValidator');
+const adminUserCheck = require('../middlewares/adminUserCheck');
 
 
 const storage = multer.diskStorage({
@@ -25,7 +26,7 @@ const upload = multer({
 
 
 /* GET home page. */
-router.get('/addProducts',add);
+router.get('/addProducts',adminUserCheck,add);
 router.post('/addProducts', upload.single('image'),addProductValidator,store);
 
 router.get('/editProducts/:id',edit);

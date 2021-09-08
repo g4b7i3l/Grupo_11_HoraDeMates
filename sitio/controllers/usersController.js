@@ -36,7 +36,8 @@ module.exports = {
             contrasenia:bcrypt.hashSync(contrasenia,10),
             email,
             fechaNacimiento,
-            image: req.file ? req.file.filename : 'default-image.png'
+            image: req.file ? req.file.filename : 'default-image.png',
+            rol : "user"
         }
         
         usuarios.push(usuario);
