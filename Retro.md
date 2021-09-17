@@ -100,6 +100,32 @@
 ## Dejar de hacer: 
 
 * Dejar a último momento la entrega de los trabajos❌.
+* --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# RETROSPECTIVA DEL → SPRINT 5
+
+## Seguir Haciendo: 
+
+* Reuniones por zoom ✔ 
+* Actualizacion constante del tablero de trabajo ✔
+* Enfoque en trabajos de manera grupal
+
+
+## Hacer mas: 
+
+* Reuniones Dayli.
+* 
+
+## Empezar a hacer : 
+
+*  Repasar las clases teóricas
+
+## Hacer menos: 
+
+* Reuniones demasiado extensas.
+
+## Dejar de hacer: 
+
+* ❌
 
 
 
