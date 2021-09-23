@@ -8,14 +8,6 @@
     "image": "mate1.jpeg"
   },
   {
-    "id": 3,
-    "title": "Mate simple",
-    "description": "asdasd ipsum   ",
-    "price": 1200,
-    "image": "mate2.jpeg",
-    "category": "mates"
-  },
-  {
     "id": 4,
     "title": "Mate style dashed",
     "description": "lorefem ipsum",
@@ -66,9 +58,9 @@
   {
     "id": 13,
     "title": "bolso matero gray",
-    "price": 900,
-    "category": "bolsos",
-    "description": "sencillo,doble cierre ",
-    "image": "image-1629151926702.jfif"
+    "description": "sencillo,doble cierre  ",
+    "price": 950,
+    "image": "image-1629151926702.jfif",
+    "category": "bolsos"
   }
 ]
