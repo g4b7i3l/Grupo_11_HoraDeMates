@@ -63,7 +63,7 @@ module.exports = {
             return res.redirect('/')
         }else{
             return res.render('login',{
-                products,
+                
                 errores : errors.mapped()
             })
         }

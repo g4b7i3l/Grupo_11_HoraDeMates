@@ -1,0 +1,21 @@
+.list .menu {
+    display: block;
+    margin: auto;
+}
+
+
+
+.list .menu h1{
+    text-align: center;
+    margin: auto;
+}
+
+.list .menu ul li{
+    text-align: left;
+    margin: auto;
+    color: black;
+    font-size: 40px;
+    list-style-type: disc;
+    margin-left: 20px;
+   
+}

@@ -62,5 +62,13 @@
     "price": 950,
     "image": "image-1629151926702.jfif",
     "category": "bolsos"
+  },
+  {
+    "id": 14,
+    "title": "mate verde",
+    "price": 900,
+    "category": "category",
+    "description": "verde",
+    "image": "image-1632678197711.jpg"
   }
 ]

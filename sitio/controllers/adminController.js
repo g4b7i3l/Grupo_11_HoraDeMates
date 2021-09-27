@@ -1,33 +1,33 @@
 const fs = require('fs');
 const path = require('path');
+const db = require('../database/models')
 
-let { products, guardar } = require('../data/products_db');
+
 const {validationResult} = require('express-validator');
 
 module.exports = {
     add: (req, res) => {
-        return res.render('addProducts', {
-            products
+        db.Category.findAll()
+        .then(function(categories){
+            return res.render("addProducts",{categories:categories})
         })
-
     },
     store: (req,res) => {
         let errors = validationResult(req);
         if(errors.isEmpty()){
-            let product = {
-                id: (products[products.length - 1].id + 1),
+            db.Product.create({
+              /*   id: (products[products.length - 1].id + 1), */
                 title: req.body.title,
-                price: +req.body.price,
-                category: req.body.category,
                 description: req.body.description,
-                image: req.file ? req.file.filename : 'default-image.png'
-            }
-            products.push(product);
-            guardar(products);
+                price: +req.body.price,
+                image: req.file ? req.file.filename : 'default-image.png',
+                categories_id : req.body.category
+            })
             return res.redirect('/')
+            
         }else{
             return res.render('addProducts', {
-                products,
+          
                 errores: errors.mapped(),
                 old: req.body
             })
