@@ -4,6 +4,7 @@ const db = require('../database/models')
 
 
 const {validationResult} = require('express-validator');
+const Product = require('../database/models/Product');
 
 module.exports = {
     add: (req, res) => {
@@ -24,7 +25,6 @@ module.exports = {
                 categories_id : req.body.category
             })
             return res.redirect('/')
-            
         }else{
             return res.render('addProducts', {
           
@@ -34,41 +34,45 @@ module.exports = {
         }
 },
 
-    edit: (req, res) => {
-        let product = products.find(product => product.id === +req.params.id);
-        return res.render('editProducts', {
+edit : (req,res) => {
+    let categorias = db.Category.findAll();
+    let product = db.Product.findByPk(req.params.id);
+    Promise.all([categorias,product])
+    .then(([categorias,product]) => {
+        return res.render('editProducts',{
+            categorias,
             product
         })
-    },
-        update : (req, res) => {
-            const { title, description, price, category } = req.body;
-            let product = products.find(product => product.id === +req.params.id)
-            if(req.file){
-                if(fs.existsSync('./public/images/' + product.image)){
-                    fs.unlinkSync('./public/images/' + product.image)
-                }
-            }
+    })
+  
+},
+update : (req,res) => {
+    const {title, description,price,image,categories_id} = req.body;
 
-            let productoEditado = {
-                id: +req.params.id,
-                title,
-                description,
-                price: +price,
-                image: req.file ? req.file.filename : product.image,
-                category
-            }
-
-            let productosModificados = products.map(product => product.id === +req.params.id ? productoEditado : product)
-            guardar(productosModificados)
-            return res.redirect('/products/detalleDeProducto/' + req.params.id)
+    db.Product.update(
+        {
+            title : title.trim(),
+            description : description.trim(),
+            price,
+            image: req.file ? req.file.filename : Product.image,
+            categories_id
         },
-            destroy: (req, res) => {
-                let product = products.find(product => product.id === +req.params.id);
-                if(fs.existsSync('./public/images/' + product.image)){
-                    fs.unlinkSync('./public/images/' + product.image)
-                }
-                products = products.filter(product => product.id !== +req.params.id);
-                guardar(products);
-                return res.redirect('/');
+        {
+            where : {
+                id : req.params.id
             }
+        }
+    ).then( () =>   res.redirect('/'))
+    .catch(error => console.log(error))
+      
+},
+
+destroy : (req,res) => {
+    db.Product.destroy({
+        where : {
+            id : req.params.id
+        }
+    }).then( () => res.redirect('/'))
+    .catch(error => console.log(error))
+}
 }
