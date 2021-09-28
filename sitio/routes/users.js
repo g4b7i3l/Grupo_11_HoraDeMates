@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 const multer = require('multer');
 const path = require('path')
-const {registro,login,processRegister,processLogin,logout,profile} = require ('../controllers/usersController');
+const {registro,login,processRegister,processLogin,logout,profile,update} = require ('../controllers/usersController');
 const loginValidator =require('../validations/loginValidator');
 const userCheck = require('../middlewares/userCheck');
 const guestCheck = require('../middlewares/guestCheck');
@@ -44,8 +44,9 @@ const upload = multer({
 router.get('/registro',guestCheck,registro);
 router.post('/registro',upload.single('image'),validations,processRegister);
 router.get('/login',guestCheck,login);
-router.post('/login',loginValidator, processLogin);
+router.post('/login', processLogin);
 router.get('/logout',logout);
 router.get('/profile',authCheck,profile)
+router.put('/profile/',update);
 
 module.exports = router;

@@ -6,7 +6,32 @@
         <%- include('./partials/header.ejs') %>
     
                 
-        <h1>BIENVENIDO A TU PERFIL <h2><%=locals.userLogin.nombreId %></h2> </h1>
+        <h1>BIENVENIDO A TU PERFIL <!-- <h2><%=/* locals.user.nombreCompleto */ %></h2> --> </h1>
+        <form action="/users/profile/?_method=PUT" class="row" method="POST" novalidate enctype="multipart/form-data">
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Editar nombre</label>
+              <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+              value="<%= user.name %>">>
+        
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">editar contraseña</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">editar email</label>
+                <input type="email" class="form-control" id="exampleInputPassword1"
+                value="<%= user.email %>">>
+              </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">editar nameID</label>
+              <input type="text" class="form-control" id="exampleInputPassword1"
+              value="<%= user.nameId %>">>>
+            </div>
+           
+            <button type="submit" class="btn btn-primary">Guardar</button>
+          </form>
 
                     <%- include('./partials/footer.ejs') %>
                     <%- include('./partials/scripts.ejs') %>

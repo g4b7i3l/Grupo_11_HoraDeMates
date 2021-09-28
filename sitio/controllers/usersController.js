@@ -5,7 +5,7 @@ const db = require('../database/models')
 const bcrypt = require('bcryptjs');
 
 
-const {usuarios, guardar} = require('../data/users_db');
+
 
 const {validationResult} = require('express-validator');
 
@@ -50,20 +50,24 @@ module.exports = {
         let errors = validationResult(req);
         const {email, recordar} = req.body;
         if(errors.isEmpty()){
-            let usuario = usuarios.find(usuario => usuario.email === email)
-            req.session.userLogin = {
-                id : usuario.id,
-                nombreId : usuario.nombreId,
-                rol : usuario.rol
-            }
-
-            if(recordar){
-                res.cookie('horaDeMates',req.session.userLogin,{maxAge: 1000 * 60})
-            }
-            return res.redirect('/')
+            db.User.findOne({
+                where : {
+                    email
+                }
+            }).then(user => {
+                req.session.userLogin = {
+                    id : user.id,
+                    email : user.email,
+                    rols_id : user.rols_id,
+                    nameId : user.nombreId
+                   
+                }
+                recordar && res.cookie('horaDeMates',req.session.userLogin,{maxAge: 1000 * 60})
+                return res.redirect('/')
+            })
+           
         }else{
             return res.render('login',{
-                products,
                 errores : errors.mapped()
             })
         }
@@ -75,8 +79,24 @@ module.exports = {
     },
     
     profile : (req,res) => {
-        return res.render('profile',{
-            
-        })
-    }
+        db.User.findByPk(req.session.userLogin.id)
+        .then(user => res.render('profile',{
+            user
+        })).catch(error => console.log(error))
+    },
+    update : (req,res) => {
+        const {name,password,email,nameId} = req.body;
+        db.User.update(
+            {
+                name : name,
+                password :  password != " " && bcrypt.hashSync(password,10),
+                email : email,
+                nameId : nameId,
+            },
+            {
+                where : {
+                    id : req.params.id
+                }
+            }).then( () => res.redirect('/users/profile'))
+    },
 }
