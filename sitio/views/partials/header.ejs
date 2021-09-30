@@ -38,7 +38,7 @@
       <div class="logo"><a href="/"><img src="/images/logo-h.png" alt="logo"></a></div>
       <ul class="login-bar">
         <% if (locals.userLogin) { %>
-          <% if (locals.userLogin.rol === "admin") { %>
+          <% if (locals.userLogin.rols_id === 2) { %>
             <li class="dropdown">
               <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                 ADMIN

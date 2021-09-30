@@ -31,7 +31,7 @@ module.exports = {
               email : email,
               birth_date : fecha,
               nameId: nombreId,
-              rols_id: 2
+              rols_id: user.rols_id
 
           }).then(result => res.redirect('/')
              
