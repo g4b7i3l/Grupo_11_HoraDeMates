@@ -7,26 +7,26 @@
     
                 
         <h1>BIENVENIDO A TU PERFIL <!-- <h2><%=/* locals.user.nombreCompleto */ %></h2> --> </h1>
-        <form action="/users/profile/?_method=PUT" class="row" method="POST" novalidate enctype="multipart/form-data">
+        <form action="/users/profile/?_method=PUT" class="row" method="POST" novalidate>
             <div class="mb-3">
               <label for="exampleInputEmail1" class="form-label">Editar nombre</label>
-              <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+              <input type="text" name= "name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
               value="<%= user.name %>">>
         
             </div>
             <div class="mb-3">
               <label for="exampleInputPassword1" class="form-label">editar contraseña</label>
-              <input type="password" class="form-control" id="exampleInputPassword1">
+              <input type="password" name= "password" class="form-control" id="exampleInputPassword1">
 
             </div>
             <div class="mb-3">
-                <label for="exampleInputPassword1" class="form-label">editar email</label>
-                <input type="email" class="form-control" id="exampleInputPassword1"
+                <label for="email" class="form-label">editar email</label>
+                <input type="email" name= "email" class="form-control" id="email"
                 value="<%= user.email %>">>
               </div>
             <div class="mb-3">
-              <label for="exampleInputPassword1" class="form-label">editar nameID</label>
-              <input type="text" class="form-control" id="exampleInputPassword1"
+              <label for="nameId" class="form-label">editar nameID</label>
+              <input type="text" name="nameId" class="form-control" id="nameId"
               value="<%= user.nameId %>">>>
             </div>
            

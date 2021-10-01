@@ -32,13 +32,10 @@ module.exports = {
               birth_date : fecha,
               nameId: nombreId,
               rols_id: 2
-
           }).then(result => res.redirect('/')
-             
           )
       }
 
-     
     },
 
     login : (req,res) => {
@@ -52,20 +49,19 @@ module.exports = {
         if(errors.isEmpty()){
             db.User.findOne({
                 where : {
-                    email
+                    email,
                 }
             }).then(user => {
                 req.session.userLogin = {
                     id : user.id,
                     email : user.email,
                     rols_id : user.rols_id,
-                    nameId : user.nombreId
-                   
+                    nameId : user.nombreId,
+                    password : user.password
                 }
                 recordar && res.cookie('horaDeMates',req.session.userLogin,{maxAge: 1000 * 60})
                 return res.redirect('/')
             })
-           
         }else{
             return res.render('login',{
                 errores : errors.mapped()
@@ -85,18 +81,20 @@ module.exports = {
         })).catch(error => console.log(error))
     },
     update : (req,res) => {
-        const {name,password,email,nameId} = req.body;
+        const {name,email,nameId,password} = req.body;
+        let passwordHash = bcrypt.hashSync(password,10)
         db.User.update(
             {
                 name : name,
-                password :  password != " " && bcrypt.hashSync(password,10),
                 email : email,
                 nameId : nameId,
+                password : passwordHash ? passwordHash : session.userLogin.password
             },
             {
                 where : {
-                    id : req.params.id
+                    id : req.session.userLogin.id
                 }
             }).then( () => res.redirect('/users/profile'))
+            .catch(error => console.log(error))
     },
 }

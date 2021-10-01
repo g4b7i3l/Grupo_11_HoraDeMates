@@ -23,8 +23,10 @@ module.exports = {
                 price: +req.body.price,
                 image: req.file ? req.file.filename : 'default-image.png',
                 categories_id : req.body.category
+            }).then(product => {
+                return res.redirect('/')
             })
-            return res.redirect('/')
+
         }else{
             return res.render('addProducts', {
           
@@ -61,18 +63,22 @@ update : (req,res) => {
             where : {
                 id : req.params.id
             }
-        }
-    ).then( () =>   res.redirect('/'))
+        }).then( () =>   res.redirect('/'))
     .catch(error => console.log(error))
       
 },
 
 destroy : (req,res) => {
-    db.Product.destroy({
-        where : {
-            id : req.params.id
-        }
-    }).then( () => res.redirect('/'))
-    .catch(error => console.log(error))
+    db.Product.findByPk(req.params.id)
+    .then(product=>{
+        if(fs.existsSync('./public/images/' + product.image)){
+            fs.unlinkSync('./public/images/' + product.image)}
+            db.Product.destroy({
+                where : {
+                    id : req.params.id
+                }
+            }).then( () => res.redirect('/'))
+            .catch(error => console.log(error))
+    }).catch(error => console.log(error))
 }
 }

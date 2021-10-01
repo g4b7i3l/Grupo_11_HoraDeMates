@@ -44,9 +44,9 @@ const upload = multer({
 router.get('/registro',guestCheck,registro);
 router.post('/registro',upload.single('image'),validations,processRegister);
 router.get('/login',guestCheck,login);
-router.post('/login', processLogin);
+router.post('/login',loginValidator,processLogin);
 router.get('/logout',logout);
 router.get('/profile',authCheck,profile)
-router.put('/profile/',update);
+router.put('/profile',update);
 
 module.exports = router;
