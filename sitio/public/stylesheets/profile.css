@@ -1,22 +1,30 @@
 .profile {
-    background: radial-gradient(circle, rgba(47,47,47,1) 0%, rgba(0,0,0,1) 99%);
-
+    background-image: url("/images/fondo.jpeg") ;
+     background-repeat: no-repeat;
+    align-items: center;
+    text-align: center;
+    background-size: 1300px 1000px;
+  
     
     
 }
 .profile h1{
-   
-    color: antiquewhite;
-    
-    
+
+     font-size: 42px;  
+      font-family:'Bebas Neue';
+      margin-left: 25px;
+      
 }
 
 .profile h2{
-    font-family: 'Times New Roman', Times, serif;
-    color: royalblue;
-    font-size: 100px;
+    font-family: 'Rock Salt';
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 45px;
     font-style: italic;
-    margin-left: 155px;
+    margin-left: 65px;
+    text-align: center;
+    margin-top: 15px ;
+    margin-bottom: 60px;
     
 }
 
@@ -34,3 +42,41 @@
 .profile button{
     margin-left: 40px;
 }
+
+.profile form{
+    display: inline-block;
+   
+
+}
+
+.profile .btn-primary {
+    color:rgb(2, 2, 2);
+    background: linear-gradient( #603813 0%, #b29f94  51%, #603813  100%);
+    border-color: #000000;
+    width: 280px;
+    margin-bottom: 100px;
+    font-family:'Rock Salt';
+    font-weight: bold;
+}
+
+.profile label {
+    color:rgb(2, 2, 2);
+    font-family:'Bebas Neue';
+}
+
+
+
+.btn-grad {background-image: linear-gradient(to right, #603813 0%, #b29f94  51%, #603813  100%)}
+.btn-grad {
+
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;            
+   box-shadow: 0 0 20px #eee;
+   border-radius: 10px;
+   display: block;
+ }
+
+ 
