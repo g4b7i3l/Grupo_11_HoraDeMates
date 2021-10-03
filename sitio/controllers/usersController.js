@@ -88,7 +88,7 @@ module.exports = {
                 name : name,
                 email : email,
                 nameId : nameId,
-                password : passwordHash ? passwordHash : session.userLogin.password
+                password : password
             },
             {
                 where : {
