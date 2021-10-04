@@ -44,7 +44,15 @@ module.exports = {
             res.render('list',{productos: productos})
         })
       
-        } 
+        } ,
+
+        allProducts : (req,res) => {
+            db.Product.findAll()
+            .then(function(productos){
+                res.render('productos',{productos: productos})
+            })
+          
+            }
         
 
 
