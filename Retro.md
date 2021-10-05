@@ -126,7 +126,35 @@
 ## Dejar de hacer: 
 
 * ❌
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# RETROSPECTIVA DEL → SPRINT 6
 
+## Seguir Haciendo: 
+
+* Reuniones por zoom ✔ 
+* Actualizacion constante del tablero de trabajo ✔
+* Enfoque en trabajos de manera grupal
+* Revisar errores 
+
+
+## Hacer mas: 
+
+* Reuniones Daily
+*Prácticas grupales 
+
+
+## Empezar a hacer : 
+
+* Ejercicios grupales
+* Chequear el proyecto de manera constante
+
+## Hacer menos: 
+
+* Trabajos de manera individual.
+
+## Dejar de hacer: 
+
+* No hacer un chequeo general del proyecto ❌.
 
 
 
