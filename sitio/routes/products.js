@@ -11,7 +11,6 @@ router.get('/categories',category);
 router.get('/list',list);
 router.get('/productos', allProducts)
 
-router.get("/" )
 
 
 module.exports = router;

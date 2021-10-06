@@ -88,7 +88,7 @@ module.exports = {
                 name : name,
                 email : email,
                 nameId : nameId,
-                password : password
+                password :  password != " " && bcrypt.hashSync(password,10)
             },
             {
                 where : {

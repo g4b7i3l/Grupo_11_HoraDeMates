@@ -6,7 +6,6 @@ module.exports = {
         db.Product.findAll()
         .then(function(products){
             return res.render("index",{products:products})
-        })
-         
+        }) 
     }
 }
