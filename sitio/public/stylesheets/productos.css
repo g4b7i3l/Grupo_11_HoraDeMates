@@ -1,7 +1,7 @@
 .productos {
-    background: rgb(47,47,47);
+        background: rgb(47,47,47);
     background: radial-gradient(circle, rgba(47,47,47,1) 0%, rgba(0,0,0,1) 99%);
-    max-width: 1140px;
+    
     margin: 0 auto;
     width: 100%;
 }
@@ -20,9 +20,8 @@
 /*SECCION PRODUCTOS*/
 
 .productos .menu .productos{
-    background: rgb(47,47,47);
-    background: radial-gradient(circle, rgba(47,47,47,1) 0%, rgba(0,0,0,1) 99%);
-   display: flex;
+    background: rgb(0,0,0);
+  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(255,255,255,1) 1%, rgba(255,255,255,1) 46%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 83%, rgba(255,249,249,1) 99%, rgba(0,0,0,1) 100%);
    flex-wrap: wrap;
    margin: 15px 15px;
    justify-content: space-around;
@@ -30,29 +29,37 @@
 
 .productos .menu .producto{
     margin-top: 10px;
- 
+    transition-property: background-color;
+    border: 10px solid white;
+    transition: all 0.5s ease-in-out 250ms ;
+ }
+ .productos .menu .producto:hover{
+    background: radial-gradient(circle, rgba(47,47,47,1) 0%, rgba(0,0,0,0.2) 99%);
+    border-radius: 3rem;
+    border-color:rgba(238, 195, 3, 0.3)
+
 
  }
  
  .productos .producto .imagen img{
-    border-style: ridge;
-    border-color: grey;
+ 
+    box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.3);
     
     
 }
 
 .productos .resumen .descripcion{
-    color: white;
+    color: black;
     font-size: 16px;
     font-weight: 200;
     text-align: center;
-    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif
+    font-family: 'Bebas Neue'
 
 }
 
 
 .productos .resumen .precio{
-    color: white;
+    color: rgb(0, 0, 0);
     font-size: 10px;
     text-align: center;
     margin-top: 5px;
@@ -78,6 +85,17 @@
     flex-direction: column;
     width: 85%;
     margin-left: 15px;
+}
+
+.productos .texto-degradado{
+    background-image: linear-gradient( 
+        7deg ,#5f570d,darkgrey,#5f570d);
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -moz-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+    -text-fill-color: transparent;
 }
 
 @media (min-width:426px){
