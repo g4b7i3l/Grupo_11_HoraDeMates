@@ -7,5 +7,9 @@ module.exports = {
         .then(function(products){
             return res.render("index",{products:products})
         }) 
+    },
+    contacto : (req,res) => {
+   return res.render('contacto')
+     
     }
 }

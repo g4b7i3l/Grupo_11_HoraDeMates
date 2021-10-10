@@ -1,0 +1,44 @@
+.contacto{
+    background-image: url("/images/fondo1.jpeg") ;
+    background-repeat: no-repeat;
+   align-items: center;
+   text-align: center;
+   background-size: 100%;
+}
+
+.contacto .form-contact{
+    width: 50%;
+      margin-left: 10px;
+      color: white;
+      background-color: rgba(0,0,0,0.5);
+      margin-top: 10px;
+}
+
+.contacto form h1{
+   color: white;
+
+}
+.contacto .button {
+    color:rgb(2, 2, 2);
+    background: linear-gradient( #282828 0%, #40bb81 51%, #ffffff 100%);
+    border-color: #ffffff;
+    width: 280px;
+    height: 50px;
+    margin-bottom: 100px;
+    margin-top: 50px;
+    font-family:'Abril Fatface';
+    font-weight: 10px;
+    font-size: 25px;
+}
+.contacto .button:hover {
+    box-shadow: inset 0 0 20px rgba(157, 255, 1, 0.5), 0 0 20px rgba(0, 255, 0, 0.9);
+    outline-color: rgba(96, 49, 172, 0);
+    outline-offset: 80px;
+    text-shadow: 12px 12px 6px rgb(196, 193, 193);
+ 
+  }
+  
+.contacto .mb-3{
+    width: 65%;
+    margin: auto;
+}
