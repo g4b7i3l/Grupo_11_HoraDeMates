@@ -7,92 +7,68 @@
 
             <main>
                 <div class="formulario">
-                    <form action="/users/registro" method="POST" enctype="multipart/form-data">
+                    <form action="/users/registro" method="POST" enctype="multipart/form-data" id="form-register">
                         <div class="inputs">
                             <div class="mb-3">
                                 <label for="" class="form-label ">Nombre y Apellido :</label>
-                                <input 
-                                type="text" 
-                                class="form-control"
-                                id="nombre"
-                                name="nombreCompleto"
-                                value="<%= locals.oldData ? oldData.nombreCompleto : null %>"
-                                >
+                                <input type="text" class="form-control" id="nombre" name="nombreCompleto"
+                                    value="<%= locals.oldData ? oldData.nombreCompleto : null %>">
 
-                                <% if (locals.errors && errors.nombreCompleto) { %> 
-                                      <div class="text-danger">
-                                       <%= errors.nombreCompleto.msg %> 
-                                      </div>
-                                    <%  } %> 
-                              </div>
-                              <div class="mb-3">
+                                <% if (locals.errores && errores.nombreCompleto) { %>
+                                    <div class="text-danger">
+                                        <%= errores.nombreCompleto.msg %>
+                                    </div>
+                                    <% } %>
+                            </div>
+                            <div class="mb-3">
                                 <label for="" class="form-label">Nombre de ID :</label>
-                                <input 
-                                 type="text"
-                                 class="form-control" 
-                                 id="nombreId"
-                                 name="nombreId" 
-                                 value="<%= locals.oldData ? oldData.nombreId : null %>" 
-                                >         <!--Con este if ternario logramos lo que se conoce como PERSISTENCIA DE DATOS -->
+                                <input type="text" class="form-control" id="nombreId" name="nombreId"
+                                    value="<%= locals.oldData ? oldData.nombreId : null %>">
+                                <!--Con este if ternario logramos lo que se conoce como PERSISTENCIA DE DATOS -->
 
-                                <% if (locals.errors && errors.nombreId) { %> 
+                                <% if (locals.errores && errores.nombreId) { %>
                                     <div class="text-danger">
-                                     <%= errors.nombreId.msg %> 
+                                        <%= errores.nombreId.msg %>
                                     </div>
-                                  <%  } %> 
-                              </div>
-                              <div class="mb-3">
+                                    <% } %>
+                            </div>
+                            <div class="mb-3">
                                 <label for="" class="form-label">Contraseña:</label>
-                                <input 
-                                 type="password"
-                                 class="form-control"
-                                 id="exampleInputPassword1"
-                                 name="contrasenia"
-                                 value="<%= locals.oldData ? oldData.contrasenia : null %>"
-                                >
+                                <input type="password" class="form-control" id="exampleInputPassword1"
+                                    name="contrasenia" value="<%= locals.oldData ? oldData.contrasenia : null %>">
 
-                                <% if (locals.errors && errors.contrasenia) { %> 
+                                <% if (locals.errores && errores.contrasenia) { %>
                                     <div class="text-danger">
-                                     <%= errors.contrasenia.msg %> 
+                                        <%= errores.contrasenia.msg %>
                                     </div>
-                                  <%  } %> 
-                              </div>
-                              <div class="mb-3">
+                                    <% } %>
+                            </div>
+                            <div class="mb-3">
                                 <label for="" class="form-label">Email:</label>
-                                <input 
-                                 type="email" 
-                                 class="form-control"
-                                 id="email" 
-                                 name="email"
-                                 value="<%= locals.oldData ? oldData.email : null %>"
-                                >
-                                <% if (locals.errors && errors.email) { %> 
+                                <input type="email" class="form-control" id="email" name="email"
+                                    value="<%= locals.oldData ? oldData.email : null %>">
+                                <% if (locals.errores && errores.email) { %>
                                     <div class="text-danger">
-                                     <%= errors.email.msg %> 
+                                        <%= errores.email.msg %>
                                     </div>
-                                  <%  } %> 
-                              </div>
-                              <div class="mb-3">
+                                    <% } %>
+                            </div>
+                            <div class="mb-3">
                                 <label for="" class="form-label">Fecha de nacimiento:</label>
-                                <input 
-                                 type="date" 
-                                 class="form-control"
-                                 id="fecha" 
-                                 name="fechaNacimiento"
-                                 value="<%= locals.oldData ? oldData.fechaNacimiento : null %>"
-                                 >
-                                <% if (locals.errors && errors.fechaNacimiento) { %> 
+                                <input type="date" class="form-control" id="fecha" name="fechaNacimiento"
+                                    value="<%= locals.oldData ? oldData.fechaNacimiento : null %>">
+                                <% if (locals.errores && errores.fechaNacimiento) { %>
                                     <div class="text-danger">
-                                     <%= errors.fechaNacimiento.msg %> 
+                                        <%= errores.fechaNacimiento.msg %>
                                     </div>
-                                  <%  } %> 
-                              </div>
-                              <div class="inputs">
-                                <label class="">Cargar foto de perfil :</label>
-                                <input class="input-form" type="file" name="image" accept="image/*">
+                                    <% } %>
+                            </div>
+                            <div class="inputs">
+                                <label for="image"class="btn btn-dark my-3 ">Cargar imagen</label>
+                                <input class="input-form" type="file" name="image" id="image" accept="image/*" hidden>
                             </div>
                         </div>
-                       
+
 
                         <div class="reg-bor">
                             <div class="registrarse">
@@ -133,7 +109,7 @@
                 </div>
             </main>
             <%- include('./partials/footer.ejs') %>
-            <%- include('./partials/scripts.ejs') %>
+                <%- include('./partials/scripts.ejs') %>
     </body>
 
 </html>

@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&display=swap');
+
+.nosotros {
+    background-image: url('../images/matesFondo.jpg');
+    background-size: 50%;
+}
+.titulo{
+    font-size: 100px;
+}
+.nosotros .texto{
+background-color:rgba(0, 0, 0, 0.7);
+text-align: center;
+color: white;
+margin: 5% 15%;
+font-size: 40px;
+font-family:'Ephesis'
+}

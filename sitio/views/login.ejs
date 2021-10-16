@@ -26,18 +26,18 @@
 
                 <!-- form bootstrap-->
                 <section class="box-2">
-                    <form class="form" action="" method="POST">
+                    <form class="form" action="" method="POST" id="form-login">
                         <div class="mb-3">
-                            <label for="exampleInputEmail1" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1"
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control <%- locals.errores && locals.errores.email ? 'is-invalid' : null %>" id="email"
                                 aria-describedby="emailHelp" name="email">
                             <div id="emailHelp" class="form-text">Nunca compartiremos su correo electrónico con nadie
 
                             </div>
                         </div>
                         <div class="mb-3">
-                            <label for="exampleInputPassword1" class="form-label">Contraseña</label>
-                            <input type="password" class="form-control" id="exampleInputPassword1" name="password">
+                            <label for="password" class="form-label">Contraseña</label>
+                            <input type="password" class="form-control" id="password" name="password">
                         </div>
                         <div class="mb-3 form-check">
                             <input type="checkbox" class="form-check-input" id="exampleCheck1" name="recordar">
@@ -51,6 +51,7 @@
             <%- include('./partials/footer.ejs') %>
 
                 <%- include('./partials/scripts.ejs') %>
+                <script src="/js/loginValidator.js"></script>
 
     </body>
 

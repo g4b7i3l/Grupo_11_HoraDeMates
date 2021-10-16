@@ -23,11 +23,11 @@
                     <div class="boxForm">
                         <label for="category">Categorías:</label>
                         <select name="category" id="category" value=Categorias>
-                            <option value="mates" <%= product.category === "mates" ? 'selected' : null %>>Mates</option>
-                            <option value="yerbas" <%= product.category === "yerbas" ? 'selected' : null %>>Yerbas</option>
-                            <option value="bolsos" <%= product.category === "bolsos" ? 'selected' : null %>>Bolsos Materos</option>
-                            <option value="bombillas" <%= product.category === "bombillas" ? 'selected' : null %>>Bombillas</option>
-                            <option value="otros" <%= product.category === "otros" ? 'selected' : null %>>Otros</option>
+                            <option value="1" <%= product.categories_id == "1" ? 'selected' : null %>>Mates</option>
+                            <option value="2" <%= product.categories_id == "2" ? 'selected' : null %>>Yerbas</option>
+                            <option value="3" <%= product.categories_id == "3" ? 'selected' : null %>>Bolsos Materos</option>
+                            <option value="4" <%= product.categories_id == "4" ? 'selected' : null %>>Bombillas</option>
+                            <option value="5" <%= product.categories_id == "5" ? 'selected' : null %>>Otros</option>
                         </select>
                     </div>
 
