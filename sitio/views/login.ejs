@@ -32,12 +32,13 @@
                             <input type="email" class="form-control <%- locals.errores && locals.errores.email ? 'is-invalid' : null %>" id="email"
                                 aria-describedby="emailHelp" name="email">
                             <div id="emailHelp" class="form-text">Nunca compartiremos su correo electrónico con nadie
-
                             </div>
+                            <span class="text-danger" id="error-email"></span>
                         </div>
                         <div class="mb-3">
                             <label for="password" class="form-label">Contraseña</label>
                             <input type="password" class="form-control" id="password" name="password">
+                            <span class="text-danger" id="error-password"></span>
                         </div>
                         <div class="mb-3 form-check">
                             <input type="checkbox" class="form-check-input" id="exampleCheck1" name="recordar">

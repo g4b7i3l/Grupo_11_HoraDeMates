@@ -38,7 +38,7 @@ module.exports = {
                     name : user.name,
                     rol : user.rol
                 }
-                return res.redirect('/login')
+                return res.redirect('/')
             }).catch(error=> console.log(error)) 
         } else {
             console.log(errors)

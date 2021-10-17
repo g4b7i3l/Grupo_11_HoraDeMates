@@ -10,10 +10,10 @@
                     <form action="/users/registro" method="POST" enctype="multipart/form-data" id="form-register">
                         <div class="inputs">
                             <div class="mb-3">
-                                <label for="" class="form-label ">Nombre y Apellido :</label>
+                                <label for="nombre" class="form-label ">Nombre y Apellido :</label>
                                 <input type="text" class="form-control" id="nombre" name="nombreCompleto"
                                     value="<%= locals.oldData ? oldData.nombreCompleto : null %>">
-
+                                    <span class = "text-danger"id="error-nombre"></span>
                                 <% if (locals.errores && errores.nombreCompleto) { %>
                                     <div class="text-danger">
                                         <%= errores.nombreCompleto.msg %>
@@ -21,9 +21,10 @@
                                     <% } %>
                             </div>
                             <div class="mb-3">
-                                <label for="" class="form-label">Nombre de ID :</label>
+                                <label for="nombreId" class="form-label">Nombre de ID :</label>
                                 <input type="text" class="form-control" id="nombreId" name="nombreId"
                                     value="<%= locals.oldData ? oldData.nombreId : null %>">
+                                    <span class = "text-danger" id="error-nombreId"></span>
                                 <!--Con este if ternario logramos lo que se conoce como PERSISTENCIA DE DATOS -->
 
                                 <% if (locals.errores && errores.nombreId) { %>
@@ -33,9 +34,10 @@
                                     <% } %>
                             </div>
                             <div class="mb-3">
-                                <label for="" class="form-label">Contraseña:</label>
-                                <input type="password" class="form-control" id="exampleInputPassword1"
+                                <label for="password" class="form-label">Contraseña:</label>
+                                <input type="password" class="form-control" id="password"
                                     name="contrasenia" value="<%= locals.oldData ? oldData.contrasenia : null %>">
+                                    <span class = "text-danger" id="error-password"></span>
 
                                 <% if (locals.errores && errores.contrasenia) { %>
                                     <div class="text-danger">
@@ -44,9 +46,10 @@
                                     <% } %>
                             </div>
                             <div class="mb-3">
-                                <label for="" class="form-label">Email:</label>
+                                <label for="email" class="form-label">Email:</label>
                                 <input type="email" class="form-control" id="email" name="email"
                                     value="<%= locals.oldData ? oldData.email : null %>">
+                                    <span class = "text-danger" id="error-email"></span>
                                 <% if (locals.errores && errores.email) { %>
                                     <div class="text-danger">
                                         <%= errores.email.msg %>
@@ -54,7 +57,7 @@
                                     <% } %>
                             </div>
                             <div class="mb-3">
-                                <label for="" class="form-label">Fecha de nacimiento:</label>
+                                <label for="fecha" class="form-label">Fecha de nacimiento:</label>
                                 <input type="date" class="form-control" id="fecha" name="fechaNacimiento"
                                     value="<%= locals.oldData ? oldData.fechaNacimiento : null %>">
                                 <% if (locals.errores && errores.fechaNacimiento) { %>
@@ -110,6 +113,7 @@
             </main>
             <%- include('./partials/footer.ejs') %>
                 <%- include('./partials/scripts.ejs') %>
+                <script src="/js/registerValidator.js"></script>
     </body>
 
 </html>
