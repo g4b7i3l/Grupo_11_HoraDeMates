@@ -40,7 +40,7 @@ $('password').addEventListener('focus', () => {
 $('password').addEventListener('blur', () => {
     if(!regExPass.test($('password').value)){
         $('password').classList.add('is-invalid')
-        $('error-password').innerHTML = "La contraseña debe cumplir con estándares"
+        $('error-password').innerHTML = "La contraseña debe cumplir con estándares requeridos"
     }else{
         $('password').classList.remove('is-invalid')
         $('password').classList.add('is-valid')
