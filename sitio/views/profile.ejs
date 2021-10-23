@@ -7,6 +7,9 @@
     
                 
         <h1>Bienvenid@ a tu perfil  <h2><%=locals.user.nameId  %></h2>  </h1>
+        <div class="avatar">
+        <img class= "rounded-circle" src="/images/<%= user.image %> " alt="" width="200px">
+      </div>
         <form action="/users/profile/?_method=PUT" class="row" method="POST" novalidate>
             <div class="mb-3">
               <label for="exampleInputEmail1" class="form-label">Editar nombre</label>

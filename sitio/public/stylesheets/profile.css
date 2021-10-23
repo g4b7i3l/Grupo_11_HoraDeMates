@@ -24,7 +24,7 @@
     margin-left: 65px;
     text-align: center;
     margin-top: 15px ;
-    margin-bottom: 60px;
+    margin-bottom: 10px;
     
 }
 
@@ -77,5 +77,15 @@
 }
 
 
+.profile .avatar{
+    margin: auto;
+    width: 100px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.profile .avatar img{
+    margin: auto;
+    width: 100px;
+}
 
 

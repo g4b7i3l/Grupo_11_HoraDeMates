@@ -20,7 +20,7 @@ module.exports = {
     processRegister: (req, res) => {
 
         let errors = validationResult(req);
-        let { nombreCompleto, nombreId, contrasenia, email, fechaNacimiento } = req.body;
+        let { nombreCompleto, nombreId, contrasenia, email, fechaNacimiento,image} = req.body;
 
         let fecha = new Date(fechaNacimiento)
 
@@ -30,8 +30,10 @@ module.exports = {
                 password: bcrypt.hashSync(contrasenia, 10),
                 email: email,
                 birth_date: fecha,
+                image : req.file ? req.file.filename : "default.png",
                 nameId: nombreId,
                 rols_id: 2
+                
             }).then(user => {
                 req.session.userLogin = {
                     id : user.id,

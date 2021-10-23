@@ -66,7 +66,7 @@ CREATE TABLE `products` (
   PRIMARY KEY (`id`),
   KEY `FK_products_categories_idx` (`categories_id`),
   CONSTRAINT `FK_products_categories` FOREIGN KEY (`categories_id`) REFERENCES `categories` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=27 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=58 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -96,11 +96,12 @@ CREATE TABLE `users` (
   `password` varchar(250) NOT NULL,
   `email` varchar(45) NOT NULL,
   `birth_date` date NOT NULL,
+  `image` varchar(200) DEFAULT NULL,
   `nameId` varchar(45) NOT NULL,
   `rols_id` int DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `FK_users_rols_idx` (`rols_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -112,4 +113,4 @@ CREATE TABLE `users` (
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-09-30 12:33:16
+-- Dump completed on 2021-10-22 13:15:40
