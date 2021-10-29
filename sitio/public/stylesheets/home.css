@@ -5,6 +5,7 @@
     max-width: 1140px;
     margin: 0 auto;
     width: 100%;
+    
 }
 
 .home h2{
@@ -145,4 +146,13 @@ display: block;
 .home .producto .imagen img{
   width: 270px;
 }
+
+.home .productos .resumen .precio{
+    color: wheat;
+}
+.home .productos .resumen .descripcion{
+    color: wheat;
+}
+
+
 }

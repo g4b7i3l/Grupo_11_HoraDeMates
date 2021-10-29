@@ -20,7 +20,7 @@ module.exports = {
     processRegister: (req, res) => {
 
         let errors = validationResult(req);
-        let { nombreCompleto, nombreId, contrasenia, email, fechaNacimiento,image} = req.body;
+        let { nombreCompleto, nombreId, contrasenia, email, fechaNacimiento} = req.body;
 
         let fecha = new Date(fechaNacimiento)
 
@@ -34,12 +34,8 @@ module.exports = {
                 nameId: nombreId,
                 rols_id: 2
                 
-            }).then(user => {
-                req.session.userLogin = {
-                    id : user.id,
-                    name : user.name,
-                    rol : user.rol
-                }
+            }).then(result => {
+               
                 return res.redirect('/')
             }).catch(error=> console.log(error)) 
         } else {
