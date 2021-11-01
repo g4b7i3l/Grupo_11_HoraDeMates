@@ -93,7 +93,6 @@ module.exports = {
     },
     update: (req, res) => {
         const { name, email, nameId, password } = req.body;
-        let passwordHash = bcrypt.hashSync(password, 10)
         db.User.update(
             {
                 name: name,

@@ -1,5 +1,5 @@
 let regExEmail =  /^(([^<>()\[\]\.,;:\s@\”]+(\.[^<>()\[\]\.,;:\s@\”]:+)*)|(\”.+\”))@(([^<>()[\]\.,;:\s@\”]+\.)+[^<>()[\]\.,;:\s@\”]{2,})$/;
-let regExPass = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,12}$/;
+let regExPass = /^.{6,20}$/;
 
 
 
@@ -33,7 +33,7 @@ $('nombreId').addEventListener('blur', () => {
     }
 })
 $('password').addEventListener('focus', () => {
-    $('error-password').innerHTML = "La contraseña debe tener entre 6 y 12 caracteres, un número y una mayúscula"
+    $('error-password').innerHTML = "La contraseña debe tener entre 6 y 20 caracteres"
 
 })
 
