@@ -41,5 +41,6 @@ module.exports = [
         max : 12
     }).withMessage('La contraseña debe tener entre 6 y 12 caracteres'),
 
-
+    check('fechaNacimiento')
+    .notEmpty().withMessage('La fecha de nacimiento es obligatoria').bail()
 ]
