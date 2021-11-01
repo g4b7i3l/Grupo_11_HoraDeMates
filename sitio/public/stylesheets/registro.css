@@ -45,13 +45,7 @@ margin: auto;
     color: gray;
     margin-top: 40px;
 }
-.registro .formulario button{
-    margin: 10px 0 0 41%;
-}
-.registro .registrarse {
-    margin-top: 10px;
-    margin-right: 90px;
-}
+
 
 .registro .espacio{
     border-bottom: solid 1px gray;
@@ -61,19 +55,43 @@ margin: auto;
 .registro .espacio-caja{
     display: flex;
     justify-content: space-between;
+    
 }
-/* -------------------- tablet ----------------------- */
-@media(min-width:361px){
+.registro main .inputs{
+    width: 20%;
+}
+.registro .registrarse {
+    margin: auto;
+}
+
+/* -------------------- MOBILE ----------------------- */
+
+
+    .registro {
+        background: radial-gradient(circle, rgba(106,106,106,1) 0%, rgba(9,8,8,1) 0%, rgba(36,36,36,1) 45%, rgba(155,155,158,1) 100%, rgba(158,158,158,1) 100%, rgba(101,101,103,1) 100%);
+    }
+    
     .registro .contenedor{
 margin: 10% 20% 20%;
     }
+
+
+.registro main .inputs{
+    width: 80%;
 }
 
-.registro .registrarse {
-    margin-top: 10px;
-    margin-right: 390px;
-}
 
-.registro .inputs{
-    width: 20%;
+@media(min-width:361px){
+
+    .registro main .inputs{
+        width: 60%;
+       
+    }
+}
+@media (min-width:426px){
+    .registro main .inputs{
+        width: 30%;
+       
+    }
+
 }

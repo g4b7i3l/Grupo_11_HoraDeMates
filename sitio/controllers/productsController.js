@@ -2,6 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const { products } = require('../data/products_db');
 const db = require('../database/models');
+const { Op } = require('sequelize')
 module.exports = {
     carrito: (req, res) => {
         return res.render('carrito', {
@@ -21,97 +22,47 @@ module.exports = {
 
     },
     search: (req, res) => {
-        let result = products.filter(producto => producto.title.toLowerCase().includes(req.query.search.toLowerCase()));
-        return res.render('resultSearch', {
-            result,
-            products,
-            busqueda: req.query.search
+        let Producto = db.Product.findAll({
+            where: {
+                title: {
+                    [Op.substring]: req.query.search
+                }
+            },
+            include: [
+                { association: 'Category' }
+            ]
         })
+        let Categories = db.Category.findAll()
+        Promise.all([Producto, Categories])
+            .then(([Producto, Categories]) => {
+                return res.render('resultSearch', {
+                    Producto,
+                    Categories,
+                    name: req.query.search
+                })
+            })
+            .catch(error => console.log(error))
     },
     category: (req, res) => {
-        /*         let result = products.filter(product => product.category === req.query.category)
-                return res.render('resultSearch',{
-                    result,
-                    products,
-                    busqueda : req.query.category
-                })    */
-        let productos = db.Product.findAll();
-        let mates = db.Category.findOne({
-            where: {
-                name: 'mates'
-            },
+        let productos = db.Product.findAll({
+            include:[
+                {association:'Category'}
+        ]
+        });
+        let categorias = db.Category.findAll({
             include: [
                 {
-                    association: 'products',
-                    include: [
-                        { association: 'images' }
-                    ],
+                    association: 'Products',
                 }
             ]
         });
-        let yerbas = db.Category.findOne({
-            where: {
-                name: 'yerbas'
-            },
-            include: [
-                {
-                    association: 'products',
-                    include: [
-                        { association: 'images' }
-                    ]
-                }
-            ]
-        });
-        let bolsos = db.Category.findOne({
-            where: {
-                name: 'bolsos-materos'
-            },
-            include: [
-                {
-                    association: 'products',
-                    include: [
-                        { association: 'images' }
-                    ]
-                }
-            ]
-        });
-        let bombillas = db.Category.findOne({
-            where: {
-                name: 'bombillas'
-            },
-            include: [
-                {
-                    association: 'products',
-                    include: [
-                        { association: 'images' }
-                    ]
-                }
-            ]
-        });
-        let otros = db.Category.findOne({
-            where: {
-                name: 'otros'
-            },
-            include: [
-                {
-                    association: 'products',
-                    include: [
-                        { association: 'images' }
-                    ]
-                }
-            ]
-        });
-        Promise.all([productos, mates, yerbas, bombillas, bolsos, otros])
-            .then(([productos, mates, yerbas, bombillas, bolsos, otros]) => {
-                return res.render('list', {
+        Promise.all([categorias,productos])
+            .then(([categorias,productos]) => {
+                    res.render('productoCategoria', {
                     title: "Hora de mates",
                     productos,
-                    mates: mates.products,
-                    yerbas: yerbas.products,
-                    bombillas: bombillas.products,
-                    bolsos: bolsos.products,
-                    otros: otros.products
-                })
+                    categorias,
+                });console.log(productos,categorias);
             }).catch(error => console.log(error))
 
     },
@@ -127,6 +78,6 @@ module.exports = {
             .then(function (productos) {
                 res.render('productos', { productos: productos })
             })
-    }
+    },
 }
 

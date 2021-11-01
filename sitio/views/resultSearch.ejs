@@ -6,8 +6,8 @@
   <%- include('./partials/header.ejs')  %> 
     <div class="register">
         <main class="container mt-5">
-            <% if (result.length > 0) { %>
-                <h3>Resultados de la búsqueda: <%= busqueda %> </h3>
+            <% if (Producto.length > 0) { %>
+                <h3>Resultados de la búsqueda: <%= name %> </h3>
                 <table class="table">
                     <thead>
                       <tr>
@@ -19,9 +19,9 @@
                       </tr>
                     </thead>
                     <tbody>
-                        <% result.forEach(producto => { %>
+                        <% Producto.forEach(producto => { %>
                             <tr>
-                                <th scope="row">1</th>
+                                <th scope="row"></th>
                                 <td><%= producto.title %> </td>
                                 <td><%= producto.description %> </td>
                                 <td><%= producto.category %> </td>
@@ -33,7 +33,7 @@
                     </tbody>
                   </table>
             <% } else{ %>
-                <h3>No hay resultado para la búsqueda: <%= busqueda %> </h3>
+                <h3>No hay resultado para la búsqueda: <%= name %> </h3>
 
                 <% } %>
 

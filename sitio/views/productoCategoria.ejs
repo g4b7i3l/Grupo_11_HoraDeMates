@@ -56,24 +56,29 @@
 
               <h1 class="texto-degradado">Nuestros Productos</h1>
               <section class="productos">
-                <% productos.forEach(producto=> { %>
-      
-                  <article class="producto">
-                    <div class="imagen">
-                      <a href="/products/detalleDeProducto/<%= producto.id %> "><img class="rounded" src="/images/<%= producto.image %> "
-                          width="200px"> </a>
-                    </div>
-                    <div class="camion"><i class="fas fa-truck"></i></div>
-                    <div class="resumen">
-                      <h4 class="descripcion">
-                        <%= producto.title %>
-                      
-                      </h4>
-                      <p class="precio">$<%= producto.price %>
-                      </p>
-                    </div>
-                  </article>
-      
+                  <% categorias.forEach(categoria => { %>
+                   <h5> <%= categoria.title %> </h5>
+                   <div class="category-grid">
+                        <% productos.forEach(producto => { %>
+                         <% if (producto.categories_id == categoria.id && producto.categories_id) { %>
+                          <article class="producto">
+                            <div class="imagen">
+                              <a href="/products/detalleDeProducto/<%= producto.id %> "><img class="rounded" src="/images/<%= producto.image %> "
+                                  width="200px"> </a>
+                            </div>
+                            <div class="camion"><i class="fas fa-truck"></i></div>
+                            <div class="resumen">
+                              <h4 class="descripcion">
+                                <%= producto.title %>
+                              
+                              </h4>
+                              <p class="precio">$<%= producto.price %>
+                              </p>
+                            </div>
+                          </article>
+                         <% } %>
+                        <% }) %>
+                      </div>
                   <% }) %>
               </section>
             </main>

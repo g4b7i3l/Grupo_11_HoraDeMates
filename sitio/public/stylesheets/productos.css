@@ -1,9 +1,28 @@
+.category-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1px;
+}
 .productos {
         background: rgb(47,47,47);
     background: radial-gradient(circle, rgba(47,47,47,1) 0%, rgba(0,0,0,1) 99%);
-    
+    flex-direction: row;
     margin: 0 auto;
     width: 100%;
+}
+.camion{
+    display: block;
+    font-size: 16px;
+    padding: 4px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    top: -30px;
+    color: #39b54a;
+    position:relative;
+    right: -80%;
 }
 
 .productos h2{

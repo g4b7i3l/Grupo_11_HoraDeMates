@@ -7,6 +7,7 @@ const bcrypt = require('bcryptjs');
 
 
 
+
 const { validationResult } = require('express-validator');
 
 
@@ -32,7 +33,7 @@ module.exports = {
                 birth_date: fecha,
                 image : req.file ? req.file.filename : "default.png",
                 nameId: nombreId,
-                rols_id: 2
+                rols_id: 1
                 
             }).then(user => {
                 req.session.userLogin = {
