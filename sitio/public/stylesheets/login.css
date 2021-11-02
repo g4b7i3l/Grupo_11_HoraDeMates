@@ -19,31 +19,22 @@
   }
   .login .menu .box h2{
       color: white;
-      margin-bottom: 40px;
+   
      
   }
-  
-  .login .buttons .button-facebook{
-      text-align: center;
-      width: 80%;
-      height: 70px;
-      font-size: 12px;
-      font-family: Georgia, 'Times New Roman', Times, serif;
-      border-radius: 10px; 
-      padding-right: 10px;
-     
-  }
-  .login .buttons .button-google{
-      text-align: center;
-      width: 80%;
-      height: 70px;
-      font-size: 12px;
-      font-family: Georgia, 'Times New Roman', Times, serif;
-      border-radius: 10px; 
-      margin-top: 25px;
-      margin-bottom: 25px;
-      
-  }
+
+  .login .menu  .mb-3{
+    width: 80%;
+   margin: auto;   
+}
+
+.login .menu  .btn-dark{
+    width: 60%;
+    
+   margin: auto;   
+   margin-left: 60px;
+}
+
   .login .buttons i{
       font-size: 25px;
       margin-right: 20px;
@@ -59,8 +50,8 @@
       max-width: 1140px;
       margin: auto;
       margin-top: 50px;
-      width: 90%;
-      height: 70px;
+      width: 100%;
+  
       align-items: center;
       margin-bottom: 10px;
       
@@ -109,7 +100,7 @@
           font-weight: bolder;
       }
      
-      }
+      
       .login .menu .box-2{
           
           max-width: 1140px;
@@ -118,9 +109,15 @@
           width: 40%;
           align-items: center;   
       }
-  
-      
+    
+    }
                                    
       @media (min-width:769px){
       
+.login .menu  .btn-dark{
+    width: 40%;
+    
+   margin: auto;   
+   margin-left: 150px;
+}
       }

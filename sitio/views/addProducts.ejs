@@ -9,7 +9,8 @@
                         <div class="formulario">
                             <div class="boxForm">
                                 <label for="titulo" class="">Título :</label>
-                                <input class="input-title" type="text" name="title" id="titulo" >
+                                <input class="input-title" type="text" name="title" id="titulo" 
+                                value="<%= locals.oldData ? oldData.title : null %>">
                                 <div class="small text-danger">
                                     <%= locals.errores && errores.title ? errores.title.msg : null %>
                                 </div>
@@ -18,7 +19,8 @@
 
                             <div class="boxForm">
                                 <label for="descripcion" class="">Descripción:</label>
-                                <input class="input-form" type="text" name="description" id="descripcion" >
+                                <input class="input-form" type="text" name="description" id="descripcion" 
+                                value="<%= locals.oldData ? oldData.description : null %>"> 
                                 <div class="small text-danger">
                                     <%= locals.errores && errores.description ? errores.description.msg : null %>
                                 </div>
@@ -26,7 +28,7 @@
 
                             <div class="boxForm">
                                 <label for="category">Categorías:</label>
-                                <select name="category" id="category" value="Categorias">
+                                <select name="category" id="category" value="Categorias" >
                                     <option value=0>Seleccione una categoría</option>
                                     <option value=1>Mates</option>
                                     <option value=2>Yerbas</option>

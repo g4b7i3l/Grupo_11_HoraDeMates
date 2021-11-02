@@ -8,20 +8,6 @@
         <%- include('./partials/header.ejs') %>
             <main class="menu">
 
-                <!-- form html + css-->
-                <section class="box">
-                    <h2>Inicio de sesión</h2>
-                    <div class="buttons">
-                        <button type="button" class="button-facebook"> <i class="fab fa-facebook-f"></i> Continua con
-                            Facebook </button>
-                    </div>
-                    <div class="buttons">
-                        <button type="button" class="button-google"> <i class="fab fa-google"></i> Continua con Google
-                        </button>
-                    </div>
-                    </div>
-                    <span>O continua con e-mail:</span>
-                </section>
 
 
                 <!-- form bootstrap-->
@@ -44,7 +30,7 @@
                             <input type="checkbox" class="form-check-input" id="exampleCheck1" name="recordar">
                             <label class="form-check-label" for="exampleCheck1">Recordarme</label>
                         </div>
-                        <button type="submit" class="btn btn-primary">Ingresar</button>
+                        <button type="submit" class="btn btn-dark">Ingresar</button>
                            <span class="text-danger"><%= locals.errores && errores.email ? errores.email.msg : null%> </span>
                     </form>
                 </section>

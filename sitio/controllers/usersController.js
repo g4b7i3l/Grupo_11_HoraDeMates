@@ -42,7 +42,7 @@ module.exports = {
         } else {
             console.log(errors)
             return res.render('registro', {
-                old: req.body,
+                oldData: req.body,
                 errores: errors.mapped()
             })
         }

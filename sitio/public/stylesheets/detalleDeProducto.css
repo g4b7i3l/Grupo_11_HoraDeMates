@@ -134,6 +134,12 @@ margin-top: 12px;
 
     
    }
+   .detalleDeProducto .descripcion-producto span{
+   
+    font-size: 45px;
+
+
+}
    .detalleDeProducto .menu .container span{ 
     margin-top: -5px;
     font-size: 28px;

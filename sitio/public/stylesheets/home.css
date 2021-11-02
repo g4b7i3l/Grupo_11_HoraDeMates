@@ -46,6 +46,13 @@
     
     
 }
+.home .productos .resumen .precio{
+    color: wheat;
+}
+.home .productos .resumen .descripcion{
+    color: wheat;
+}
+
 
 .home .resumen .descripcion{
     color: white;
@@ -146,12 +153,6 @@ display: block;
   width: 270px;
 }
 
-.home .productos .resumen .precio{
-    color: wheat;
-}
-.home .productos .resumen .descripcion{
-    color: wheat;
-}
 
 
 }

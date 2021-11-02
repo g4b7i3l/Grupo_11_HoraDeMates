@@ -31,7 +31,7 @@ module.exports = {
             return res.render('addProducts', {
           
                 errores: errors.mapped(),
-                old: req.body
+                oldData: req.body
             })
         }
 },
