@@ -38,8 +38,8 @@ module.exports = [
     check('contrasenia')
     .isLength({
         min : 6,
-        max : 12
-    }).withMessage('La contraseña debe tener entre 6 y 12 caracteres'),
+        max : 20
+    }).withMessage('La contraseña debe tener entre 6 y 20 caracteres'),
 
     check('fechaNacimiento')
     .notEmpty().withMessage('La fecha de nacimiento es obligatoria').bail()
