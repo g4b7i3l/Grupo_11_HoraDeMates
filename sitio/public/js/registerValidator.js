@@ -59,11 +59,39 @@ $('email').addEventListener('blur', () => {
     }
 })
 
-/* formRegistro.addEventListener('submit' , e =>{
+
+
+$('fecha').addEventListener('blur', () => {
+    if(!$('fecha').value){
+        $('fecha').classList.add('is-invalid')
+        $('error-fecha').innerHTML = 'la fecha es obligatoria'
+    }else {
+     $('fecha').classList.remove('is-invalid')
+     $('fecha').classList.add('is-valid')
+     $('error-fecha').innerHTML = null
+    }
+})
+
+
+ formRegistro.addEventListener('submit' , e =>{
     e.preventDefault();
-
-
-    }) */
+ let elementos = formRegistro.elements 
+ let error = false
+ for (let index = 0; index < elementos.length ; index++) {
+    if(elementos[index].classList.contains('is-invalid')|| elementos[index].value == "" ){
+        error = true
+        if(elementos[index].value == ""){
+            elementos[index].classList.add('is-invalid')
+            errorEmpty.innerHTML = 'Los campos indicados son obligatorios'
+        }
+    }
+     
+ }
+ !error && formRegistro.submit()
+     
+ 
+console.log(error)
+    }) 
  
 
 })

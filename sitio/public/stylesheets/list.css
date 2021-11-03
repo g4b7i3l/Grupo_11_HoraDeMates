@@ -18,5 +18,42 @@ body {
     font-size: 40px;
     list-style-type: disc;
     margin-left: 20px;
+
    
+}
+
+.list .menu .producto{
+
+  margin: auto;
+  margin-right: 300px;
+  text-align: center;
+}
+.list .menu .producto .imagen {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.list .menu .producto button {
+    color: blanchedalmond ;
+    height: 50px;
+}
+.list .menu .producto button a {
+    color: blanchedalmond ;
+
+}
+
+
+.list .menu a{
+    text-decoration: none;
+}
+
+.list .menu .botones{
+    display: flex;
+    margin-top: 45px;
+}
+
+.list .menu .precio{
+
+    margin-bottom: 105px;
 }

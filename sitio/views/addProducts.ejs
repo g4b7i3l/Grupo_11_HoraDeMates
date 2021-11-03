@@ -28,7 +28,7 @@
 
                             <div class="boxForm">
                                 <label for="category">Categorías:</label>
-                                <select name="category" id="category" value="Categorias" >
+                                <select name="category" id="category" value="Categorias"  >
                                     <option value=0>Seleccione una categoría</option>
                                     <option value=1>Mates</option>
                                     <option value=2>Yerbas</option>
@@ -41,7 +41,8 @@
 
                             <div class="boxForm">
                                 <label for="valor" class="">Precio : </label>
-                                <input class="input-price" type="text" name="price" >
+                                <input class="input-price" type="text" name="price" 
+                                value="<%= locals.oldData ? oldData.price : null %>"> 
                                 <div class="small text-danger">
                                     <%= locals.errores && errores.price ? errores.price.msg : null %>
                                 </div>
@@ -50,7 +51,8 @@
 
                             <div class="boxForm">
                                 <label class="">Cargar foto :</label>
-                                <input class="input-form" type="file" name="image" accept="image/*">
+                                <input class="input-form" type="file" name="image" accept="image/*"   
+                                 value="<%= locals.oldData ? oldData.name : null %>"> 
                             </div>
                             <div class="boxForm">
                                 <button type="submit" class="btn btn-dark">Guardar</button>

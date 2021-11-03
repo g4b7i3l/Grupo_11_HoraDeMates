@@ -8,6 +8,7 @@
             <main>
                 <div class="formulario">
                     <form action="/users/registro" method="POST" enctype="multipart/form-data" id="form-register">
+                        <div class="my-4"><span id="errorEmpty" class="text-danger"></span></div>
                         <div class="inputs">
                             <div class="mb-3">
                                 <label for="nombre" class="form-label ">Nombre y Apellido :</label>
@@ -60,6 +61,7 @@
                                 <label for="fecha" class="form-label">Fecha de nacimiento:</label>
                                 <input type="date" class="form-control" id="fecha" name="fechaNacimiento"
                                     value="<%= locals.oldData ? oldData.fechaNacimiento : null %>">
+                                    <span class = "text-danger" id="error-fecha"></span>
                                 <% if (locals.errores && errores.fechaNacimiento) { %>
                                     <div class="text-danger">
                                         <%= errores.fechaNacimiento.msg %>
@@ -72,10 +74,11 @@
                             </div>
                         </div>
 
-
+                  
                         <div class="reg-bor">
                             <div class="registrarse">
                                 <button type="submit" class="btn btn-dark">Registrarse</button>
+                             
                             </div>
                         </div>
 
