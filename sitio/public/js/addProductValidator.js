@@ -3,35 +3,51 @@ const $ = id  => document.getElementById(id)
 window.addEventListener("load" , () =>{
     console.log('addProduct esta conectado')
 
-    const formLogin = $('form-login');
+    const formAddproduct = $('form-addProduct');
 
-    $('email').addEventListener('blur' , () => {
-        if(!$('email').value.trim()){
-            $('email').classList.add('is-invalid')
-            $('error-email').innerHTML = 'El email es obligatorio'
+    $('title').addEventListener('blur' , () => {
+        if(!$('title').value.trim()){
+            $('title').classList.add('is-invalid')
+            $('error-title').innerHTML = 'El titulo es obligatorio'
         }else {
-         $('email').classList.remove('is-invalid')
-         $('email').classList.add('is-valid')
-         $('error-email').innerHTML = null
+         $('title').classList.remove('is-invalid')
+         $('title').classList.add('is-valid')
+         $('error-title').innerHTML = null
         }
     })
 
-    $('password').addEventListener('blur' , () => {
-        if(!$('password').value.trim()){
-            $('password').classList.add('is-invalid')
-            $('error-password').innerHTML = 'La contraseña es obligatoria'
+    $('description').addEventListener('blur' , () => {
+        if(!$('description').value.trim()){
+            $('description').classList.add('is-invalid')
+            $('error-description').innerHTML = 'La descripción es obligatoria'
         }else {
-         $('password').classList.remove('is-invalid')
-         $('password').classList.add('is-valid')
-         $('error-password').innerHTML = null
+         $('description').classList.remove('is-invalid')
+         $('description').classList.add('is-valid')
+         $('error-description').innerHTML = null
         }
     })
     
 
  
-/* formLogin.addEventListener('submit' , e =>{
+ formAddproduct.addEventListener('submit' , e =>{
     e.preventDefault();
+    let elementos = formAddproduct.elements 
+    let error = false
+    for (let index = 0; index < elementos.length -1 ; index++) {
+       if(elementos[index].classList.contains('is-invalid')|| elementos[index].value == "" ){
+           error = true
+           if(elementos[index].value == ""){
+               elementos[index].classList.add('is-invalid')
 
+     
+           }
+       }
+        
+    }
+    !error && formAddproduct.submit()
+        
+    
+   console.log(error)
 
-    }) */
+    }) 
 })

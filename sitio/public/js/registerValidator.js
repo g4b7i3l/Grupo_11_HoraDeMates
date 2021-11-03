@@ -77,7 +77,7 @@ $('fecha').addEventListener('blur', () => {
     e.preventDefault();
  let elementos = formRegistro.elements 
  let error = false
- for (let index = 0; index < elementos.length ; index++) {
+ for (let index = 0; index < elementos.length -2 ; index++) {
     if(elementos[index].classList.contains('is-invalid')|| elementos[index].value == "" ){
         error = true
         if(elementos[index].value == ""){

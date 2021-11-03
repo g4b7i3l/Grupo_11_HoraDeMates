@@ -16,6 +16,7 @@
     text-transform: uppercase;
     margin: 10px;
     padding-top: 10px;
+    display: none;
 }
 /* CARRUSEL*/
 .home .menu .carousel {
@@ -137,7 +138,13 @@
 }
 
 
+.home h2{
+    display: block;
 }
+
+}
+
+
                                         
 @media (min-width:769px){
 
@@ -154,5 +161,7 @@ display: block;
 }
 
 
-
+.home h2{
+    display: block;
+}
 }

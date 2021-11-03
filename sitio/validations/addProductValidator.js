@@ -10,7 +10,5 @@ module.exports = [
     check('price')
     .notEmpty().withMessage('Se precisa el precio'),
 
-    check('category')
-    .notEmpty().withMessage('indica la categoría'),
 
 ]
