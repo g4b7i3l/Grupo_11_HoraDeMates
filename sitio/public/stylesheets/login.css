@@ -26,6 +26,7 @@
   .login .menu  .mb-3{
     width: 80%;
    margin: auto;   
+   margin-top: 20px;
 }
 
 .login .menu  .btn-dark{
@@ -44,6 +45,11 @@
           color: white;
     }
   
+    .login  .text-danger{
+        margin-left: 30px;
+     
+        width: 100%;
+  }
   
   .login .menu .box-2{
       background-color: transparent;
@@ -120,4 +126,9 @@
    margin: auto;   
    margin-left: 150px;
 }
-      }
+.login  .text-danger{
+    margin-left: 125px;
+ 
+    width: 100%;
+}
+}

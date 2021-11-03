@@ -75,7 +75,9 @@ module.exports = {
             })
         } else {
             return res.render('login', {
-                errores: errors.mapped()
+                oldData: req.body,
+                errores: errors.mapped(),
+          
             })
         }
     },

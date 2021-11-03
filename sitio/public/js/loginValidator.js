@@ -1,3 +1,5 @@
+
+
 const $ = id  => document.getElementById(id)
 
 window.addEventListener("load" , () =>{
@@ -5,13 +7,13 @@ window.addEventListener("load" , () =>{
 
     const formLogin = $('form-login');
 
-    $('email').addEventListener('blur' , () => {
-        if(!$('email').value.trim()){
-            $('email').classList.add('is-invalid')
+    $('mail').addEventListener('blur' , () => {
+        if(!$('mail').value.trim()){
+            $('mail').classList.add('is-invalid')
             $('error-email').innerHTML = 'El email es obligatorio'
         }else {
-         $('email').classList.remove('is-invalid')
-         $('email').classList.add('is-valid')
+         $('mail').classList.remove('is-invalid')
+         $('mail').classList.add('is-valid')
          $('error-email').innerHTML = null
         }
     })
@@ -29,10 +31,25 @@ window.addEventListener("load" , () =>{
     
 
  
-/* formLogin.addEventListener('submit' , e =>{
+ formLogin.addEventListener('submit' , e =>{
     e.preventDefault();
-
-
-    }) */
+    let elementos = formLogin.elements 
+    let error = false
+    for (let index = 0; index < elementos.length -2 ; index++) {
+       if(elementos[index].classList.contains('is-invalid')|| elementos[index].value == "" ){
+           error = true
+           if(elementos[index].value == ""){
+               elementos[index].classList.add('is-invalid')
+               errorEmpty.innerHTML = 'Los campos indicados son obligatorios'
+     
+           }
+       }
+        
+    }
+    !error && formLogin.submit()
+        
+    
+   console.log(error)
+       }) 
 })
 
