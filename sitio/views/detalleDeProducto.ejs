@@ -26,8 +26,8 @@
                         <% if (locals.userLogin) { %>
                             <% if (locals.userLogin.rols_id === 2) { %>
                     <button class="btn btn-dark"><a href="/admin/editProducts/<%= producto.id %> ">Editar</a></button>
-                    <form action="/admin/delete/<%= producto.id %>?_method=DELETE " method="POST">
-                    <button type="submit" class="btn btn-dark">Eliminar</button>
+                    <form action="/admin/delete/<%= producto.id %>?_method=DELETE " method="POST" id="formDelete<%=producto.id%>">
+                    <button type="submit" class="btn btn-dark" onclick="confirmRemove(event,document.querySelector('#formDelete<%= producto.id %>'))">Eliminar</button>
                     </form>
                     <% } %>
                     <% } %>
@@ -36,9 +36,29 @@
                     <h5>Envío Gratis a Todo el País</h5>
                 </section>
             </main>
-            <%- include('./partials/footer.ejs') %>
-
+                <%- include('./partials/footer.ejs') %>
                 <%- include('./partials/scripts.ejs') %>
+                <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+                <script>
+                    const confirmRemove = (e, form) => {
+                    e.preventDefault()
+                    Swal.fire({
+                        title: '¿Vas a borrar este producto?',
+                        text: "¡No vas a poder volver atrás!",
+                        icon: 'warning',
+                        showCancelButton: true,
+                        confirmButtonColor: '#d33',
+                        cancelButtonColor: '#3085d6',
+                        confirmButtonText: 'Eliminar',
+                        cancelButtonText: 'Cancelar',
+               
+                    }).then((result) => {
+                        if (result.isConfirmed) {
+                            form.submit()
+                        }
+                    })
+                }
+                </script>
     </body>
 
 </html>

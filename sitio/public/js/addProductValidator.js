@@ -26,6 +26,30 @@ window.addEventListener("load" , () =>{
          $('error-description').innerHTML = null
         }
     })
+    $('category').addEventListener('blur' , () => {
+        if(!$('category').value.trim()){
+            $('category').classList.add('is-invalid')
+            $('error-category').innerHTML = 'La categoría es obligatoria'
+        }else {
+         $('category').classList.remove('is-invalid')
+         $('category').classList.add('is-valid')
+         $('error-category').innerHTML = null
+        }
+    })
+    
+   
+    $('price').addEventListener('blur' , () => {
+        if(!$('price').value.trim()){
+            $('price').classList.add('is-invalid')
+            $('error-price').innerHTML = 'El precio es obligatorio'
+        }else {
+         $('price').classList.remove('is-invalid')
+         $('price').classList.add('is-valid')
+         $('error-price').innerHTML = null
+        }
+    })
+    
+
     
 
  
