@@ -2,7 +2,8 @@ const fs = require('fs');
 const path = require('path');
 const { products } = require('../data/products_db');
 const db = require('../database/models');
-const { Op } = require('sequelize')
+const { Op } = require('sequelize');
+const { receiveMessageOnPort } = require('worker_threads');
 module.exports = {
     carrito: (req, res) => {
         return res.render('carrito', {
@@ -45,24 +46,27 @@ module.exports = {
     },
     category: (req, res) => {
         let productos = db.Product.findAll({
-            include:[
-                {association:'Category'}
-        ]
+            where: { categories_id: req.params.id }
+            ,
+            include: [
+                { association: 'Category' }
+            ],
         });
         let categorias = db.Category.findAll({
+            where: { id: req.params.id },
             include: [
                 {
                     association: 'Products',
                 }
             ]
         });
-        Promise.all([categorias,productos])
-            .then(([categorias,productos]) => {
-                    res.render('productoCategoria', {
+        Promise.all([categorias, productos])
+            .then(([categorias, productos]) => {
+                res.render('productoCategoria', {
                     title: "Hora de mates",
                     productos,
                     categorias,
-                });console.log(productos,categorias);
+                }); console.log(productos, categorias);
             }).catch(error => console.log(error))
 
     },
