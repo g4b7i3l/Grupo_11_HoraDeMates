@@ -1,5 +1,5 @@
 body {
-    background:whitesmoke
+    background-color: whitesmoke;
 }
 .list .menu {
     display: block;
@@ -9,8 +9,20 @@ body {
 .list .menu h1{
     text-align: center;
     margin: auto;
+    margin-bottom: 20px;
+}
+.list .menu a{
+    margin-top: 15px;
 }
 
+.list .menu ul{
+    width: 60%;
+    margin: auto;
+    background: rgb(241,200,153);
+background: linear-gradient(90deg, rgba(241,200,153,1) 6%, rgba(242,237,206,1) 65%, rgba(201,184,129,0.8547794117647058) 100%);
+border-style: double;
+border-color: grey;
+}
 .list .menu ul li{
     text-align: left;
     margin: auto;
@@ -31,7 +43,13 @@ body {
 .list .menu .producto .imagen {
     margin: auto;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+}
+.list .menu .producto .resumen {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 30px;
 }
 
 .list .menu .producto button {
@@ -50,10 +68,11 @@ body {
 
 .list .menu .botones{
     display: flex;
-    margin-top: 45px;
+    margin-top: 70px;
 }
 
 .list .menu .precio{
-
+    
     margin-bottom: 105px;
+    font-size: 30px;
 }

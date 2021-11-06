@@ -24,7 +24,7 @@ module.exports = {
                 image: req.file ? req.file.filename : 'default-image.png',
                 categories_id : req.body.category
             }).then(product => {
-                return res.redirect('/')
+                return res.redirect('/products/productos')
             })
 
         }else{
@@ -63,7 +63,7 @@ update : (req,res) => {
             where : {
                 id : req.params.id
             }
-        }).then( () =>   res.redirect('/'))
+        }).then( () =>   res.redirect('/products/productos'))
     .catch(error => console.log(error))
       
 },
@@ -77,7 +77,7 @@ destroy : (req,res) => {
                 where : {
                     id : req.params.id
                 }
-            }).then( () => res.redirect('/'))
+            }).then( () => res.redirect('/products/productos'))
             .catch(error => console.log(error))
     }).catch(error => console.log(error))
 }
